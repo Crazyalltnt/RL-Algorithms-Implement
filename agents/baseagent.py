@@ -1,4 +1,7 @@
 class Baseagent(object):
+    """
+    智能体基类
+    """
     def __init__(self, args):
         self.args = args
         self.agent = list()
