@@ -12,6 +12,8 @@ from nn_builder.pytorch.NN import NN
 from torch.optim import optimizer
 
 class Base_Agent(object):
+    """智能体基类"""
+    
     def __init__(self, config) -> None:
         self.logger = self.setup_logger()  # 设置日志管理器
         self.debug_mode = config.debug_mode  # 调试模式
