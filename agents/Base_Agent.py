@@ -13,7 +13,7 @@ from torch.optim import optimizer
 
 class Base_Agent(object):
     """智能体基类"""
-    
+
     def __init__(self, config) -> None:
         self.logger = self.setup_logger()  # 设置日志管理器
         self.debug_mode = config.debug_mode  # 调试模式
@@ -45,11 +45,11 @@ class Base_Agent(object):
         self.global_step_number = 0  # 总训练步数
         self.turn_off_exploration = False
         gym.logger.set_level(40)  # 阻止打印不必要的警告
-        self.log_game_info()  # 
+        self.log_game_info()  # 打印游戏信息
 
 
     def step(self):
-        """在游戏中执行一步。 此方法必须被所有智能体重写"""
+        """在游戏中运行一个episode。 此方法必须被所有智能体重写"""
         raise ValueError("Step needs to be implemented by the agent")
 
     def get_environment_title(self):
@@ -197,7 +197,7 @@ class Base_Agent(object):
         return self.game_full_episode_scores, self.rolling_results, time_taken
 
     def conduct_action(self, action):
-        """在环境中执行动作"""
+        """在环境中执行一步动作"""
         self.next_state, self.reward, self.done, _ = self.environment.step(action)
         self.total_episode_score_so_far += self.reward
         if self.hyperparameters["clip_rewards"]: self.reward =  max(min(self.reward, 1.0), -1.0)  # 奖励剪裁
@@ -279,7 +279,7 @@ class Base_Agent(object):
         memory.add_experience(*experience)
 
     def take_optimisation_step(self, optimizer, network, loss, clipping_norm=None, retain_graph=False):
-        """计算loss梯度优化更新参数"""
+        """计算loss，执行一次反向传播，梯度下降更新参数"""
         if not isinstance(network, list): network = [network]
         optimizer.zero_grad()  # 梯度重置为0
         loss.backward(retain_graph=retain_graph)  # 反向传播计算梯度
@@ -287,8 +287,8 @@ class Base_Agent(object):
         if self.debug_mode: self.log_gradient_and_weight_information(network, optimizer)
         if clipping_norm is not None:
             for net in network:
-                torch.nn.utils.clip_grad_norm_(net.parameters(), clipping_norm) #clip gradients to help stabilise training
-        optimizer.step() #this applies the gradients
+                torch.nn.utils.clip_grad_norm_(net.parameters(), clipping_norm)  # 梯度剪裁保证稳定训练
+        optimizer.step()  # 优化参数
 
     def log_gradient_and_weight_information(self, network, optimizer):
         """记录梯度和权重信息"""
