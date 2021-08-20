@@ -1,4 +1,5 @@
 import random
+import os
 import numpy as np
 import torch
 import torch.optim as optim
@@ -16,6 +17,7 @@ class DQN(Base_Agent):
 
     def __init__(self, config):
         Base_Agent.__init__(self, config)
+        self.agent_round = config.agent_round
         self.memory = Replay_Buffer(self.hyperparameters["buffer_size"], self.hyperparameters["batch_size"], config.seed, self.device)
         self.q_network_local = self.create_NN(input_dim=self.state_size, output_dim=self.action_size)
         self.q_network_optimizer = optim.Adam(self.q_network_local.parameters(),
@@ -30,10 +32,12 @@ class DQN(Base_Agent):
     def step(self):
         """在游戏中运行一个episode，每n步进行一次迭代学习"""
         while not self.done:
+            if self.config.train_render:
+                self.config.environment.render()  # 可视化
             self.action = self.pick_action()  # 选择动作
             self.conduct_action(self.action)  # 执行一步动作
-            if self.time_for_q_network_to_learn():  # 每经过n步并且经验池样本足够才会学习
-                for _ in range(self.hyperparameters["learning_iterations"]):  # 学习迭代次数
+            if self.time_for_q_network_to_learn():  # 每经过n步并且经验池样本足够才会学习 dqn=1
+                for _ in range(self.hyperparameters["learning_iterations"]):  # 学习迭代次数，dqn=1
                     self.learn()
             self.save_experience()  # 保存经验到经验池
             self.state = self.next_state
@@ -41,7 +45,7 @@ class DQN(Base_Agent):
         self.episode_number += 1
 
     def pick_action(self, state=None):
-        """使用原始Q网络epsilon贪婪策略选择动作"""
+        """使用原始Q网络和epsilon贪婪策略选择动作"""
         # PyTorch 只接受mini-batch而不接受单个观测，所以我们必须使用 unsqueeze 来添加
         # 一个“假”维度，使它成为一个min-batch而不是一个一维的观测
         if state is None: state = self.state
@@ -106,7 +110,10 @@ class DQN(Base_Agent):
 
     def locally_save_policy(self):
         """保存策略模型"""
-        torch.save(self.q_network_local.state_dict(), "Models/{}_local_network.pt".format(self.agent_name))
+        model_save_path = self.cur_run_data_dir + "/models"
+        if not os.path.exists(model_save_path):
+            os.makedirs(model_save_path)
+        torch.save(self.q_network_local.state_dict(), model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
 
     def time_for_q_network_to_learn(self):
         """返回布尔值，指示是否已采取足够的步骤来学习，并且重放缓冲区中是否有足够的经验可供学习"""

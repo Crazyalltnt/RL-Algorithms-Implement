@@ -15,11 +15,13 @@ class Base_Agent(object):
     """智能体基类"""
 
     def __init__(self, config) -> None:
+        self.config = config  # 配置数据
+        self.cur_run_data_dir = self.config.cur_run_data_dir
         self.logger = self.setup_logger()  # 设置日志管理器
-        self.debug_mode = config.debug_mode  # 调试模式
+        self.terminal_logger = self.config.terminal_logger  # 设置终端日志管理器
+        self.debug_mode = self.config.debug_mode  # 调试模式
         # if self.debug_mode:
         #     self.tensorflow = SummaryWriter()
-        self.config = config  # 配置数据
         self.set_random_seeds(config.seed)  # 设置随机种子
         self.environment = config.environment  # 设置环境实例
         self.environment_title = self.get_environment_title()  # 获取环境名
@@ -96,6 +98,7 @@ class Base_Agent(object):
     def get_score_required_to_win(self):
         """获取赢得比赛所需的平均分数"""
         print("TITLE ", self.environment_title)
+        self.terminal_logger.info("TITLE " + self.environment_title)
         if self.environment_title == "FetchReach": return -5
         if self.environment_title in ["AntMaze", "Hopper", "Walker2d"]:
             print("Score required to win set to infinity therefore no learning rate annealing will happen")
@@ -115,7 +118,7 @@ class Base_Agent(object):
 
     def setup_logger(self):
         """设置logger"""
-        filename = "Training.log"
+        filename = self.cur_run_data_dir + "/Training.log"
         try: 
             if os.path.isfile(filename): 
                 os.remove(filename)
@@ -188,8 +191,8 @@ class Base_Agent(object):
         if num_episodes is None: num_episodes = self.config.num_episodes_to_run
         start = time.time()
         while self.episode_number < num_episodes:
-            self.reset_game()
-            self.step()
+            self.reset_game()  # 重置环境
+            self.step()  # 执行一个episode
             if save_and_print_results: self.save_and_print_result()
         time_taken = time.time() - start  # 用时
         if show_whether_achieved_goal: self.show_whether_achieved_goal()
@@ -226,6 +229,8 @@ class Base_Agent(object):
     def print_rolling_result(self):
         """滚动打印最新的episode结果"""
         text = """"\r Episode {0}, Score: {3: .2f}, Max score seen: {4: .2f}, Rolling score: {1: .2f}, Max rolling score seen: {2: .2f}"""
+        self.terminal_logger.info(text.format(len(self.game_full_episode_scores), self.rolling_results[-1], self.max_rolling_score_seen,
+                                     self.game_full_episode_scores[-1], self.max_episode_score_seen))
         sys.stdout.write(text.format(len(self.game_full_episode_scores), self.rolling_results[-1], self.max_rolling_score_seen,
                                      self.game_full_episode_scores[-1], self.max_episode_score_seen))
         sys.stdout.flush()
@@ -238,10 +243,12 @@ class Base_Agent(object):
             print("\033[91m" + "\033[1m" +
                   "{} did not achieve required score \n".format(self.agent_name) +
                   "\033[0m" + "\033[0m")
+            self.terminal_logger.info("{} did not achieve required score \n".format(self.agent_name))
         else:
             print("\033[92m" + "\033[1m" +
                   "{} achieved required score at episode {} \n".format(self.agent_name, index_achieved_goal) +
                   "\033[0m" + "\033[0m")
+            self.terminal_logger.info("{} achieved required score at episode {} \n".format(self.agent_name, index_achieved_goal))
 
     def achieved_required_score_at_index(self):
         """返回智能体实现目标的episode，如果不存在，返回-1"""

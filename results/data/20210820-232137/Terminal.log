@@ -1,0 +1,459 @@
+2021-08-20 23:21:37,108 - agents.Trainer - INFO - The directory to store the data of this run has been created:  results/data/20210820-232137
+2021-08-20 23:21:37,109 - agents.Trainer - INFO - AGENT NAME: DQN
+2021-08-20 23:21:37,109 - agents.Trainer - INFO - 1.1: DQN
+2021-08-20 23:21:37,145 - agents.Trainer - INFO - TITLE CartPole
+2021-08-20 23:21:37,152 - agents.Trainer - INFO - {'learning_rate': 0.01, 'batch_size': 256, 'buffer_size': 40000, 'epsilon': 1.0, 'epsilon_decay_rate_denominator': 1, 'discount_rate': 0.99, 'tau': 0.01, 'alpha_prioritised_replay': 0.6, 'beta_prioritised_replay': 0.1, 'incremental_td_error': 1e-08, 'update_every_n_steps': 1, 'linear_hidden_units': [30, 15], 'final_layer_activation': 'None', 'batch_norm': False, 'gradient_clipping_norm': 0.7, 'learning_iterations': 1, 'clip_rewards': False, 'output_activation': None, 'hidden_activations': 'relu', 'dropout': 0.0, 'initialiser': 'default', 'columns_of_data_to_be_embedded': [], 'embedding_dimensions': [], 'y_range': ()}
+2021-08-20 23:21:37,153 - agents.Trainer - INFO - RANDOM SEED 30552860
+2021-08-20 23:21:37,164 - agents.Trainer - INFO - " Episode 1, Score:  16.00, Max score seen:  16.00, Rolling score:  16.00, Max rolling score seen: -inf
+2021-08-20 23:21:37,173 - agents.Trainer - INFO - " Episode 2, Score:  17.00, Max score seen:  17.00, Rolling score:  16.50, Max rolling score seen: -inf
+2021-08-20 23:21:37,182 - agents.Trainer - INFO - " Episode 3, Score:  14.00, Max score seen:  17.00, Rolling score:  15.67, Max rolling score seen: -inf
+2021-08-20 23:21:37,187 - agents.Trainer - INFO - " Episode 4, Score:  10.00, Max score seen:  17.00, Rolling score:  14.25, Max rolling score seen: -inf
+2021-08-20 23:21:37,192 - agents.Trainer - INFO - " Episode 5, Score:  9.00, Max score seen:  17.00, Rolling score:  13.20, Max rolling score seen: -inf
+2021-08-20 23:21:37,199 - agents.Trainer - INFO - " Episode 6, Score:  14.00, Max score seen:  17.00, Rolling score:  13.33, Max rolling score seen: -inf
+2021-08-20 23:21:37,204 - agents.Trainer - INFO - " Episode 7, Score:  9.00, Max score seen:  17.00, Rolling score:  12.71, Max rolling score seen: -inf
+2021-08-20 23:21:37,210 - agents.Trainer - INFO - " Episode 8, Score:  9.00, Max score seen:  17.00, Rolling score:  12.25, Max rolling score seen: -inf
+2021-08-20 23:21:37,214 - agents.Trainer - INFO - " Episode 9, Score:  9.00, Max score seen:  17.00, Rolling score:  11.89, Max rolling score seen: -inf
+2021-08-20 23:21:37,219 - agents.Trainer - INFO - " Episode 10, Score:  9.00, Max score seen:  17.00, Rolling score:  11.60, Max rolling score seen: -inf
+2021-08-20 23:21:37,224 - agents.Trainer - INFO - " Episode 11, Score:  9.00, Max score seen:  17.00, Rolling score:  11.36, Max rolling score seen: -inf
+2021-08-20 23:21:37,230 - agents.Trainer - INFO - " Episode 12, Score:  9.00, Max score seen:  17.00, Rolling score:  11.17, Max rolling score seen: -inf
+2021-08-20 23:21:37,235 - agents.Trainer - INFO - " Episode 13, Score:  9.00, Max score seen:  17.00, Rolling score:  11.00, Max rolling score seen: -inf
+2021-08-20 23:21:37,239 - agents.Trainer - INFO - " Episode 14, Score:  9.00, Max score seen:  17.00, Rolling score:  10.86, Max rolling score seen: -inf
+2021-08-20 23:21:37,245 - agents.Trainer - INFO - " Episode 15, Score:  9.00, Max score seen:  17.00, Rolling score:  10.73, Max rolling score seen: -inf
+2021-08-20 23:21:37,251 - agents.Trainer - INFO - " Episode 16, Score:  11.00, Max score seen:  17.00, Rolling score:  10.75, Max rolling score seen: -inf
+2021-08-20 23:21:37,256 - agents.Trainer - INFO - " Episode 17, Score:  9.00, Max score seen:  17.00, Rolling score:  10.65, Max rolling score seen: -inf
+2021-08-20 23:21:37,262 - agents.Trainer - INFO - " Episode 18, Score:  11.00, Max score seen:  17.00, Rolling score:  10.67, Max rolling score seen: -inf
+2021-08-20 23:21:37,267 - agents.Trainer - INFO - " Episode 19, Score:  9.00, Max score seen:  17.00, Rolling score:  10.58, Max rolling score seen: -inf
+2021-08-20 23:21:37,273 - agents.Trainer - INFO - " Episode 20, Score:  11.00, Max score seen:  17.00, Rolling score:  10.60, Max rolling score seen: -inf
+2021-08-20 23:21:37,279 - agents.Trainer - INFO - " Episode 21, Score:  9.00, Max score seen:  17.00, Rolling score:  10.52, Max rolling score seen: -inf
+2021-08-20 23:21:37,284 - agents.Trainer - INFO - " Episode 22, Score:  10.00, Max score seen:  17.00, Rolling score:  10.50, Max rolling score seen: -inf
+2021-08-20 23:21:37,289 - agents.Trainer - INFO - " Episode 23, Score:  9.00, Max score seen:  17.00, Rolling score:  10.43, Max rolling score seen: -inf
+2021-08-20 23:21:37,294 - agents.Trainer - INFO - " Episode 24, Score:  9.00, Max score seen:  17.00, Rolling score:  10.38, Max rolling score seen: -inf
+2021-08-20 23:21:37,310 - agents.Trainer - INFO - " Episode 25, Score:  9.00, Max score seen:  17.00, Rolling score:  10.32, Max rolling score seen: -inf
+2021-08-20 23:21:37,355 - agents.Trainer - INFO - " Episode 26, Score:  9.00, Max score seen:  17.00, Rolling score:  10.27, Max rolling score seen: -inf
+2021-08-20 23:21:37,401 - agents.Trainer - INFO - " Episode 27, Score:  9.00, Max score seen:  17.00, Rolling score:  10.22, Max rolling score seen: -inf
+2021-08-20 23:21:37,447 - agents.Trainer - INFO - " Episode 28, Score:  9.00, Max score seen:  17.00, Rolling score:  10.18, Max rolling score seen: -inf
+2021-08-20 23:21:37,494 - agents.Trainer - INFO - " Episode 29, Score:  9.00, Max score seen:  17.00, Rolling score:  10.14, Max rolling score seen: -inf
+2021-08-20 23:21:37,541 - agents.Trainer - INFO - " Episode 30, Score:  9.00, Max score seen:  17.00, Rolling score:  10.10, Max rolling score seen: -inf
+2021-08-20 23:21:37,644 - agents.Trainer - INFO - " Episode 31, Score:  18.00, Max score seen:  18.00, Rolling score:  10.35, Max rolling score seen: -inf
+2021-08-20 23:21:37,692 - agents.Trainer - INFO - " Episode 32, Score:  10.00, Max score seen:  18.00, Rolling score:  10.34, Max rolling score seen: -inf
+2021-08-20 23:21:37,744 - agents.Trainer - INFO - " Episode 33, Score:  10.00, Max score seen:  18.00, Rolling score:  10.33, Max rolling score seen: -inf
+2021-08-20 23:21:37,936 - agents.Trainer - INFO - " Episode 34, Score:  38.00, Max score seen:  38.00, Rolling score:  11.15, Max rolling score seen: -inf
+2021-08-20 23:21:38,058 - agents.Trainer - INFO - " Episode 35, Score:  21.00, Max score seen:  38.00, Rolling score:  11.43, Max rolling score seen: -inf
+2021-08-20 23:21:38,178 - agents.Trainer - INFO - " Episode 36, Score:  22.00, Max score seen:  38.00, Rolling score:  11.72, Max rolling score seen: -inf
+2021-08-20 23:21:38,293 - agents.Trainer - INFO - " Episode 37, Score:  22.00, Max score seen:  38.00, Rolling score:  12.00, Max rolling score seen: -inf
+2021-08-20 23:21:38,542 - agents.Trainer - INFO - " Episode 38, Score:  49.00, Max score seen:  49.00, Rolling score:  12.97, Max rolling score seen: -inf
+2021-08-20 23:21:38,909 - agents.Trainer - INFO - " Episode 39, Score:  70.00, Max score seen:  70.00, Rolling score:  14.44, Max rolling score seen: -inf
+2021-08-20 23:21:39,185 - agents.Trainer - INFO - " Episode 40, Score:  49.00, Max score seen:  70.00, Rolling score:  15.30, Max rolling score seen: -inf
+2021-08-20 23:21:39,723 - agents.Trainer - INFO - " Episode 41, Score:  105.00, Max score seen:  105.00, Rolling score:  17.49, Max rolling score seen: -inf
+2021-08-20 23:21:40,340 - agents.Trainer - INFO - " Episode 42, Score:  138.00, Max score seen:  138.00, Rolling score:  20.36, Max rolling score seen: -inf
+2021-08-20 23:21:40,874 - agents.Trainer - INFO - " Episode 43, Score:  115.00, Max score seen:  138.00, Rolling score:  22.56, Max rolling score seen: -inf
+2021-08-20 23:21:41,795 - agents.Trainer - INFO - " Episode 44, Score:  200.00, Max score seen:  200.00, Rolling score:  26.59, Max rolling score seen: -inf
+2021-08-20 23:21:42,390 - agents.Trainer - INFO - " Episode 45, Score:  126.00, Max score seen:  200.00, Rolling score:  28.80, Max rolling score seen: -inf
+2021-08-20 23:21:43,040 - agents.Trainer - INFO - " Episode 46, Score:  134.00, Max score seen:  200.00, Rolling score:  31.09, Max rolling score seen: -inf
+2021-08-20 23:21:43,574 - agents.Trainer - INFO - " Episode 47, Score:  112.00, Max score seen:  200.00, Rolling score:  32.81, Max rolling score seen: -inf
+2021-08-20 23:21:44,239 - agents.Trainer - INFO - " Episode 48, Score:  143.00, Max score seen:  200.00, Rolling score:  35.10, Max rolling score seen: -inf
+2021-08-20 23:21:44,993 - agents.Trainer - INFO - " Episode 49, Score:  166.00, Max score seen:  200.00, Rolling score:  37.78, Max rolling score seen: -inf
+2021-08-20 23:21:45,510 - agents.Trainer - INFO - " Episode 50, Score:  112.00, Max score seen:  200.00, Rolling score:  39.26, Max rolling score seen: -inf
+2021-08-20 23:21:45,993 - agents.Trainer - INFO - " Episode 51, Score:  108.00, Max score seen:  200.00, Rolling score:  40.61, Max rolling score seen: -inf
+2021-08-20 23:21:46,915 - agents.Trainer - INFO - " Episode 52, Score:  200.00, Max score seen:  200.00, Rolling score:  43.67, Max rolling score seen: -inf
+2021-08-20 23:21:47,880 - agents.Trainer - INFO - " Episode 53, Score:  200.00, Max score seen:  200.00, Rolling score:  46.62, Max rolling score seen: -inf
+2021-08-20 23:21:48,497 - agents.Trainer - INFO - " Episode 54, Score:  137.00, Max score seen:  200.00, Rolling score:  48.30, Max rolling score seen: -inf
+2021-08-20 23:21:48,836 - agents.Trainer - INFO - " Episode 55, Score:  73.00, Max score seen:  200.00, Rolling score:  48.75, Max rolling score seen: -inf
+2021-08-20 23:21:49,186 - agents.Trainer - INFO - " Episode 56, Score:  74.00, Max score seen:  200.00, Rolling score:  49.20, Max rolling score seen: -inf
+2021-08-20 23:21:49,493 - agents.Trainer - INFO - " Episode 57, Score:  64.00, Max score seen:  200.00, Rolling score:  49.46, Max rolling score seen: -inf
+2021-08-20 23:21:49,772 - agents.Trainer - INFO - " Episode 58, Score:  58.00, Max score seen:  200.00, Rolling score:  49.60, Max rolling score seen: -inf
+2021-08-20 23:21:50,029 - agents.Trainer - INFO - " Episode 59, Score:  56.00, Max score seen:  200.00, Rolling score:  49.71, Max rolling score seen: -inf
+2021-08-20 23:21:50,271 - agents.Trainer - INFO - " Episode 60, Score:  52.00, Max score seen:  200.00, Rolling score:  49.75, Max rolling score seen: -inf
+2021-08-20 23:21:50,505 - agents.Trainer - INFO - " Episode 61, Score:  49.00, Max score seen:  200.00, Rolling score:  49.74, Max rolling score seen: -inf
+2021-08-20 23:21:50,730 - agents.Trainer - INFO - " Episode 62, Score:  48.00, Max score seen:  200.00, Rolling score:  49.71, Max rolling score seen: -inf
+2021-08-20 23:21:50,937 - agents.Trainer - INFO - " Episode 63, Score:  46.00, Max score seen:  200.00, Rolling score:  49.65, Max rolling score seen: -inf
+2021-08-20 23:21:51,154 - agents.Trainer - INFO - " Episode 64, Score:  45.00, Max score seen:  200.00, Rolling score:  49.58, Max rolling score seen: -inf
+2021-08-20 23:21:51,360 - agents.Trainer - INFO - " Episode 65, Score:  45.00, Max score seen:  200.00, Rolling score:  49.51, Max rolling score seen: -inf
+2021-08-20 23:21:51,580 - agents.Trainer - INFO - " Episode 66, Score:  47.00, Max score seen:  200.00, Rolling score:  49.47, Max rolling score seen: -inf
+2021-08-20 23:21:51,764 - agents.Trainer - INFO - " Episode 67, Score:  41.00, Max score seen:  200.00, Rolling score:  49.34, Max rolling score seen: -inf
+2021-08-20 23:21:51,959 - agents.Trainer - INFO - " Episode 68, Score:  42.00, Max score seen:  200.00, Rolling score:  49.24, Max rolling score seen: -inf
+2021-08-20 23:21:52,186 - agents.Trainer - INFO - " Episode 69, Score:  50.00, Max score seen:  200.00, Rolling score:  49.25, Max rolling score seen: -inf
+2021-08-20 23:21:52,462 - agents.Trainer - INFO - " Episode 70, Score:  51.00, Max score seen:  200.00, Rolling score:  49.27, Max rolling score seen: -inf
+2021-08-20 23:21:52,758 - agents.Trainer - INFO - " Episode 71, Score:  58.00, Max score seen:  200.00, Rolling score:  49.39, Max rolling score seen: -inf
+2021-08-20 23:21:53,708 - agents.Trainer - INFO - " Episode 72, Score:  200.00, Max score seen:  200.00, Rolling score:  51.49, Max rolling score seen: -inf
+2021-08-20 23:21:54,458 - agents.Trainer - INFO - " Episode 73, Score:  162.00, Max score seen:  200.00, Rolling score:  53.00, Max rolling score seen: -inf
+2021-08-20 23:21:55,433 - agents.Trainer - INFO - " Episode 74, Score:  200.00, Max score seen:  200.00, Rolling score:  54.99, Max rolling score seen: -inf
+2021-08-20 23:21:56,412 - agents.Trainer - INFO - " Episode 75, Score:  200.00, Max score seen:  200.00, Rolling score:  56.92, Max rolling score seen: -inf
+2021-08-20 23:21:57,116 - agents.Trainer - INFO - " Episode 76, Score:  149.00, Max score seen:  200.00, Rolling score:  58.13, Max rolling score seen: -inf
+2021-08-20 23:21:57,169 - agents.Trainer - INFO - " Episode 77, Score:  11.00, Max score seen:  200.00, Rolling score:  57.52, Max rolling score seen: -inf
+2021-08-20 23:21:57,221 - agents.Trainer - INFO - " Episode 78, Score:  11.00, Max score seen:  200.00, Rolling score:  56.92, Max rolling score seen: -inf
+2021-08-20 23:21:57,269 - agents.Trainer - INFO - " Episode 79, Score:  10.00, Max score seen:  200.00, Rolling score:  56.33, Max rolling score seen: -inf
+2021-08-20 23:21:57,320 - agents.Trainer - INFO - " Episode 80, Score:  10.00, Max score seen:  200.00, Rolling score:  55.75, Max rolling score seen: -inf
+2021-08-20 23:21:57,376 - agents.Trainer - INFO - " Episode 81, Score:  12.00, Max score seen:  200.00, Rolling score:  55.21, Max rolling score seen: -inf
+2021-08-20 23:21:57,421 - agents.Trainer - INFO - " Episode 82, Score:  10.00, Max score seen:  200.00, Rolling score:  54.66, Max rolling score seen: -inf
+2021-08-20 23:21:57,468 - agents.Trainer - INFO - " Episode 83, Score:  10.00, Max score seen:  200.00, Rolling score:  54.12, Max rolling score seen: -inf
+2021-08-20 23:21:57,521 - agents.Trainer - INFO - " Episode 84, Score:  10.00, Max score seen:  200.00, Rolling score:  53.60, Max rolling score seen: -inf
+2021-08-20 23:21:57,571 - agents.Trainer - INFO - " Episode 85, Score:  10.00, Max score seen:  200.00, Rolling score:  53.08, Max rolling score seen: -inf
+2021-08-20 23:21:57,618 - agents.Trainer - INFO - " Episode 86, Score:  10.00, Max score seen:  200.00, Rolling score:  52.58, Max rolling score seen: -inf
+2021-08-20 23:21:57,667 - agents.Trainer - INFO - " Episode 87, Score:  10.00, Max score seen:  200.00, Rolling score:  52.09, Max rolling score seen: -inf
+2021-08-20 23:21:57,716 - agents.Trainer - INFO - " Episode 88, Score:  10.00, Max score seen:  200.00, Rolling score:  51.61, Max rolling score seen: -inf
+2021-08-20 23:21:57,764 - agents.Trainer - INFO - " Episode 89, Score:  10.00, Max score seen:  200.00, Rolling score:  51.15, Max rolling score seen: -inf
+2021-08-20 23:21:57,813 - agents.Trainer - INFO - " Episode 90, Score:  10.00, Max score seen:  200.00, Rolling score:  50.69, Max rolling score seen: -inf
+2021-08-20 23:21:57,860 - agents.Trainer - INFO - " Episode 91, Score:  10.00, Max score seen:  200.00, Rolling score:  50.24, Max rolling score seen: -inf
+2021-08-20 23:21:57,914 - agents.Trainer - INFO - " Episode 92, Score:  11.00, Max score seen:  200.00, Rolling score:  49.82, Max rolling score seen: -inf
+2021-08-20 23:21:57,966 - agents.Trainer - INFO - " Episode 93, Score:  10.00, Max score seen:  200.00, Rolling score:  49.39, Max rolling score seen: -inf
+2021-08-20 23:21:58,024 - agents.Trainer - INFO - " Episode 94, Score:  11.00, Max score seen:  200.00, Rolling score:  48.98, Max rolling score seen: -inf
+2021-08-20 23:21:58,080 - agents.Trainer - INFO - " Episode 95, Score:  11.00, Max score seen:  200.00, Rolling score:  48.58, Max rolling score seen: -inf
+2021-08-20 23:21:58,140 - agents.Trainer - INFO - " Episode 96, Score:  12.00, Max score seen:  200.00, Rolling score:  48.20, Max rolling score seen: -inf
+2021-08-20 23:21:58,228 - agents.Trainer - INFO - " Episode 97, Score:  16.00, Max score seen:  200.00, Rolling score:  47.87, Max rolling score seen: -inf
+2021-08-20 23:21:59,081 - agents.Trainer - INFO - " Episode 98, Score:  176.00, Max score seen:  200.00, Rolling score:  49.17, Max rolling score seen: -inf
+2021-08-20 23:22:00,047 - agents.Trainer - INFO - " Episode 99, Score:  186.00, Max score seen:  200.00, Rolling score:  50.56, Max rolling score seen: -inf
+2021-08-20 23:22:01,046 - agents.Trainer - INFO - " Episode 100, Score:  200.00, Max score seen:  200.00, Rolling score:  52.05, Max rolling score seen: -inf
+2021-08-20 23:22:01,982 - agents.Trainer - INFO - " Episode 101, Score:  200.00, Max score seen:  200.00, Rolling score:  53.89, Max rolling score seen:  53.89
+2021-08-20 23:22:02,964 - agents.Trainer - INFO - " Episode 102, Score:  200.00, Max score seen:  200.00, Rolling score:  55.72, Max rolling score seen:  55.72
+2021-08-20 23:22:03,895 - agents.Trainer - INFO - " Episode 103, Score:  200.00, Max score seen:  200.00, Rolling score:  57.58, Max rolling score seen:  57.58
+2021-08-20 23:22:04,832 - agents.Trainer - INFO - " Episode 104, Score:  200.00, Max score seen:  200.00, Rolling score:  59.48, Max rolling score seen:  59.48
+2021-08-20 23:22:05,771 - agents.Trainer - INFO - " Episode 105, Score:  200.00, Max score seen:  200.00, Rolling score:  61.39, Max rolling score seen:  61.39
+2021-08-20 23:22:06,714 - agents.Trainer - INFO - " Episode 106, Score:  198.00, Max score seen:  200.00, Rolling score:  63.23, Max rolling score seen:  63.23
+2021-08-20 23:22:07,448 - agents.Trainer - INFO - " Episode 107, Score:  151.00, Max score seen:  200.00, Rolling score:  64.65, Max rolling score seen:  64.65
+2021-08-20 23:22:08,178 - agents.Trainer - INFO - " Episode 108, Score:  145.00, Max score seen:  200.00, Rolling score:  66.01, Max rolling score seen:  66.01
+2021-08-20 23:22:08,834 - agents.Trainer - INFO - " Episode 109, Score:  127.00, Max score seen:  200.00, Rolling score:  67.19, Max rolling score seen:  67.19
+2021-08-20 23:22:09,450 - agents.Trainer - INFO - " Episode 110, Score:  117.00, Max score seen:  200.00, Rolling score:  68.27, Max rolling score seen:  68.27
+2021-08-20 23:22:10,097 - agents.Trainer - INFO - " Episode 111, Score:  122.00, Max score seen:  200.00, Rolling score:  69.40, Max rolling score seen:  69.40
+2021-08-20 23:22:10,677 - agents.Trainer - INFO - " Episode 112, Score:  115.00, Max score seen:  200.00, Rolling score:  70.46, Max rolling score seen:  70.46
+2021-08-20 23:22:11,221 - agents.Trainer - INFO - " Episode 113, Score:  119.00, Max score seen:  200.00, Rolling score:  71.56, Max rolling score seen:  71.56
+2021-08-20 23:22:11,763 - agents.Trainer - INFO - " Episode 114, Score:  116.00, Max score seen:  200.00, Rolling score:  72.63, Max rolling score seen:  72.63
+2021-08-20 23:22:12,325 - agents.Trainer - INFO - " Episode 115, Score:  118.00, Max score seen:  200.00, Rolling score:  73.72, Max rolling score seen:  73.72
+2021-08-20 23:22:12,874 - agents.Trainer - INFO - " Episode 116, Score:  110.00, Max score seen:  200.00, Rolling score:  74.71, Max rolling score seen:  74.71
+2021-08-20 23:22:13,466 - agents.Trainer - INFO - " Episode 117, Score:  122.00, Max score seen:  200.00, Rolling score:  75.84, Max rolling score seen:  75.84
+2021-08-20 23:22:14,408 - agents.Trainer - INFO - " Episode 118, Score:  200.00, Max score seen:  200.00, Rolling score:  77.73, Max rolling score seen:  77.73
+2021-08-20 23:22:15,370 - agents.Trainer - INFO - " Episode 119, Score:  200.00, Max score seen:  200.00, Rolling score:  79.64, Max rolling score seen:  79.64
+2021-08-20 23:22:16,324 - agents.Trainer - INFO - " Episode 120, Score:  200.00, Max score seen:  200.00, Rolling score:  81.53, Max rolling score seen:  81.53
+2021-08-20 23:22:17,217 - agents.Trainer - INFO - " Episode 121, Score:  191.00, Max score seen:  200.00, Rolling score:  83.35, Max rolling score seen:  83.35
+2021-08-20 23:22:17,862 - agents.Trainer - INFO - " Episode 122, Score:  136.00, Max score seen:  200.00, Rolling score:  84.61, Max rolling score seen:  84.61
+2021-08-20 23:22:18,468 - agents.Trainer - INFO - " Episode 123, Score:  128.00, Max score seen:  200.00, Rolling score:  85.80, Max rolling score seen:  85.80
+2021-08-20 23:22:19,095 - agents.Trainer - INFO - " Episode 124, Score:  137.00, Max score seen:  200.00, Rolling score:  87.08, Max rolling score seen:  87.08
+2021-08-20 23:22:19,675 - agents.Trainer - INFO - " Episode 125, Score:  121.00, Max score seen:  200.00, Rolling score:  88.20, Max rolling score seen:  88.20
+2021-08-20 23:22:20,265 - agents.Trainer - INFO - " Episode 126, Score:  116.00, Max score seen:  200.00, Rolling score:  89.27, Max rolling score seen:  89.27
+2021-08-20 23:22:20,800 - agents.Trainer - INFO - " Episode 127, Score:  109.00, Max score seen:  200.00, Rolling score:  90.27, Max rolling score seen:  90.27
+2021-08-20 23:22:21,370 - agents.Trainer - INFO - " Episode 128, Score:  116.00, Max score seen:  200.00, Rolling score:  91.34, Max rolling score seen:  91.34
+2021-08-20 23:22:21,947 - agents.Trainer - INFO - " Episode 129, Score:  117.00, Max score seen:  200.00, Rolling score:  92.42, Max rolling score seen:  92.42
+2021-08-20 23:22:22,571 - agents.Trainer - INFO - " Episode 130, Score:  128.00, Max score seen:  200.00, Rolling score:  93.61, Max rolling score seen:  93.61
+2021-08-20 23:22:23,187 - agents.Trainer - INFO - " Episode 131, Score:  130.00, Max score seen:  200.00, Rolling score:  94.73, Max rolling score seen:  94.73
+2021-08-20 23:22:24,136 - agents.Trainer - INFO - " Episode 132, Score:  196.00, Max score seen:  200.00, Rolling score:  96.59, Max rolling score seen:  96.59
+2021-08-20 23:22:24,809 - agents.Trainer - INFO - " Episode 133, Score:  139.00, Max score seen:  200.00, Rolling score:  97.88, Max rolling score seen:  97.88
+2021-08-20 23:22:25,324 - agents.Trainer - INFO - " Episode 134, Score:  109.00, Max score seen:  200.00, Rolling score:  98.59, Max rolling score seen:  98.59
+2021-08-20 23:22:26,284 - agents.Trainer - INFO - " Episode 135, Score:  200.00, Max score seen:  200.00, Rolling score:  100.38, Max rolling score seen:  100.38
+2021-08-20 23:22:26,687 - agents.Trainer - INFO - " Episode 136, Score:  89.00, Max score seen:  200.00, Rolling score:  101.05, Max rolling score seen:  101.05
+2021-08-20 23:22:27,105 - agents.Trainer - INFO - " Episode 137, Score:  85.00, Max score seen:  200.00, Rolling score:  101.68, Max rolling score seen:  101.68
+2021-08-20 23:22:27,693 - agents.Trainer - INFO - " Episode 138, Score:  121.00, Max score seen:  200.00, Rolling score:  102.40, Max rolling score seen:  102.40
+2021-08-20 23:22:28,327 - agents.Trainer - INFO - " Episode 139, Score:  122.00, Max score seen:  200.00, Rolling score:  102.92, Max rolling score seen:  102.92
+2021-08-20 23:22:28,706 - agents.Trainer - INFO - " Episode 140, Score:  79.00, Max score seen:  200.00, Rolling score:  103.22, Max rolling score seen:  103.22
+2021-08-20 23:22:28,785 - agents.Trainer - INFO - " Episode 141, Score:  17.00, Max score seen:  200.00, Rolling score:  102.34, Max rolling score seen:  103.22
+2021-08-20 23:22:28,874 - agents.Trainer - INFO - " Episode 142, Score:  20.00, Max score seen:  200.00, Rolling score:  101.16, Max rolling score seen:  103.22
+2021-08-20 23:22:28,952 - agents.Trainer - INFO - " Episode 143, Score:  17.00, Max score seen:  200.00, Rolling score:  100.18, Max rolling score seen:  103.22
+2021-08-20 23:22:29,035 - agents.Trainer - INFO - " Episode 144, Score:  17.00, Max score seen:  200.00, Rolling score:  98.35, Max rolling score seen:  103.22
+2021-08-20 23:22:29,121 - agents.Trainer - INFO - " Episode 145, Score:  19.00, Max score seen:  200.00, Rolling score:  97.28, Max rolling score seen:  103.22
+2021-08-20 23:22:30,093 - agents.Trainer - INFO - " Episode 146, Score:  200.00, Max score seen:  200.00, Rolling score:  97.94, Max rolling score seen:  103.22
+2021-08-20 23:22:31,039 - agents.Trainer - INFO - " Episode 147, Score:  200.00, Max score seen:  200.00, Rolling score:  98.82, Max rolling score seen:  103.22
+2021-08-20 23:22:31,995 - agents.Trainer - INFO - " Episode 148, Score:  200.00, Max score seen:  200.00, Rolling score:  99.39, Max rolling score seen:  103.22
+2021-08-20 23:22:32,940 - agents.Trainer - INFO - " Episode 149, Score:  200.00, Max score seen:  200.00, Rolling score:  99.73, Max rolling score seen:  103.22
+2021-08-20 23:22:33,901 - agents.Trainer - INFO - " Episode 150, Score:  200.00, Max score seen:  200.00, Rolling score:  100.61, Max rolling score seen:  103.22
+2021-08-20 23:22:34,881 - agents.Trainer - INFO - " Episode 151, Score:  200.00, Max score seen:  200.00, Rolling score:  101.53, Max rolling score seen:  103.22
+2021-08-20 23:22:35,847 - agents.Trainer - INFO - " Episode 152, Score:  200.00, Max score seen:  200.00, Rolling score:  101.53, Max rolling score seen:  103.22
+2021-08-20 23:22:36,800 - agents.Trainer - INFO - " Episode 153, Score:  200.00, Max score seen:  200.00, Rolling score:  101.53, Max rolling score seen:  103.22
+2021-08-20 23:22:37,734 - agents.Trainer - INFO - " Episode 154, Score:  200.00, Max score seen:  200.00, Rolling score:  102.16, Max rolling score seen:  103.22
+2021-08-20 23:22:38,686 - agents.Trainer - INFO - " Episode 155, Score:  200.00, Max score seen:  200.00, Rolling score:  103.43, Max rolling score seen:  103.43
+2021-08-20 23:22:39,654 - agents.Trainer - INFO - " Episode 156, Score:  200.00, Max score seen:  200.00, Rolling score:  104.69, Max rolling score seen:  104.69
+2021-08-20 23:22:40,662 - agents.Trainer - INFO - " Episode 157, Score:  200.00, Max score seen:  200.00, Rolling score:  106.05, Max rolling score seen:  106.05
+2021-08-20 23:22:41,654 - agents.Trainer - INFO - " Episode 158, Score:  200.00, Max score seen:  200.00, Rolling score:  107.47, Max rolling score seen:  107.47
+2021-08-20 23:22:42,682 - agents.Trainer - INFO - " Episode 159, Score:  200.00, Max score seen:  200.00, Rolling score:  108.91, Max rolling score seen:  108.91
+2021-08-20 23:22:43,602 - agents.Trainer - INFO - " Episode 160, Score:  200.00, Max score seen:  200.00, Rolling score:  110.39, Max rolling score seen:  110.39
+2021-08-20 23:22:44,628 - agents.Trainer - INFO - " Episode 161, Score:  200.00, Max score seen:  200.00, Rolling score:  111.90, Max rolling score seen:  111.90
+2021-08-20 23:22:45,592 - agents.Trainer - INFO - " Episode 162, Score:  200.00, Max score seen:  200.00, Rolling score:  113.42, Max rolling score seen:  113.42
+2021-08-20 23:22:46,521 - agents.Trainer - INFO - " Episode 163, Score:  200.00, Max score seen:  200.00, Rolling score:  114.96, Max rolling score seen:  114.96
+2021-08-20 23:22:47,483 - agents.Trainer - INFO - " Episode 164, Score:  200.00, Max score seen:  200.00, Rolling score:  116.51, Max rolling score seen:  116.51
+2021-08-20 23:22:47,738 - agents.Trainer - INFO - " Episode 165, Score:  52.00, Max score seen:  200.00, Rolling score:  116.58, Max rolling score seen:  116.58
+2021-08-20 23:22:48,523 - agents.Trainer - INFO - " Episode 166, Score:  168.00, Max score seen:  200.00, Rolling score:  117.79, Max rolling score seen:  117.79
+2021-08-20 23:22:49,138 - agents.Trainer - INFO - " Episode 167, Score:  134.00, Max score seen:  200.00, Rolling score:  118.72, Max rolling score seen:  118.72
+2021-08-20 23:22:49,351 - agents.Trainer - INFO - " Episode 168, Score:  42.00, Max score seen:  200.00, Rolling score:  118.72, Max rolling score seen:  118.72
+2021-08-20 23:22:49,650 - agents.Trainer - INFO - " Episode 169, Score:  61.00, Max score seen:  200.00, Rolling score:  118.83, Max rolling score seen:  118.83
+2021-08-20 23:22:50,028 - agents.Trainer - INFO - " Episode 170, Score:  79.00, Max score seen:  200.00, Rolling score:  119.11, Max rolling score seen:  119.11
+2021-08-20 23:22:50,432 - agents.Trainer - INFO - " Episode 171, Score:  86.00, Max score seen:  200.00, Rolling score:  119.39, Max rolling score seen:  119.39
+2021-08-20 23:22:50,677 - agents.Trainer - INFO - " Episode 172, Score:  49.00, Max score seen:  200.00, Rolling score:  117.88, Max rolling score seen:  119.39
+2021-08-20 23:22:50,890 - agents.Trainer - INFO - " Episode 173, Score:  44.00, Max score seen:  200.00, Rolling score:  116.70, Max rolling score seen:  119.39
+2021-08-20 23:22:51,089 - agents.Trainer - INFO - " Episode 174, Score:  38.00, Max score seen:  200.00, Rolling score:  115.08, Max rolling score seen:  119.39
+2021-08-20 23:22:51,272 - agents.Trainer - INFO - " Episode 175, Score:  38.00, Max score seen:  200.00, Rolling score:  113.46, Max rolling score seen:  119.39
+2021-08-20 23:22:51,460 - agents.Trainer - INFO - " Episode 176, Score:  40.00, Max score seen:  200.00, Rolling score:  112.37, Max rolling score seen:  119.39
+2021-08-20 23:22:51,666 - agents.Trainer - INFO - " Episode 177, Score:  41.00, Max score seen:  200.00, Rolling score:  112.67, Max rolling score seen:  119.39
+2021-08-20 23:22:52,023 - agents.Trainer - INFO - " Episode 178, Score:  62.00, Max score seen:  200.00, Rolling score:  113.18, Max rolling score seen:  119.39
+2021-08-20 23:22:52,377 - agents.Trainer - INFO - " Episode 179, Score:  72.00, Max score seen:  200.00, Rolling score:  113.80, Max rolling score seen:  119.39
+2021-08-20 23:22:53,331 - agents.Trainer - INFO - " Episode 180, Score:  200.00, Max score seen:  200.00, Rolling score:  115.70, Max rolling score seen:  119.39
+2021-08-20 23:22:53,909 - agents.Trainer - INFO - " Episode 181, Score:  116.00, Max score seen:  200.00, Rolling score:  116.74, Max rolling score seen:  119.39
+2021-08-20 23:22:54,889 - agents.Trainer - INFO - " Episode 182, Score:  200.00, Max score seen:  200.00, Rolling score:  118.64, Max rolling score seen:  119.39
+2021-08-20 23:22:55,844 - agents.Trainer - INFO - " Episode 183, Score:  200.00, Max score seen:  200.00, Rolling score:  120.54, Max rolling score seen:  120.54
+2021-08-20 23:22:56,380 - agents.Trainer - INFO - " Episode 184, Score:  112.00, Max score seen:  200.00, Rolling score:  121.56, Max rolling score seen:  121.56
+2021-08-20 23:22:56,460 - agents.Trainer - INFO - " Episode 185, Score:  15.00, Max score seen:  200.00, Rolling score:  121.61, Max rolling score seen:  121.61
+2021-08-20 23:22:56,526 - agents.Trainer - INFO - " Episode 186, Score:  14.00, Max score seen:  200.00, Rolling score:  121.65, Max rolling score seen:  121.65
+2021-08-20 23:22:56,592 - agents.Trainer - INFO - " Episode 187, Score:  14.00, Max score seen:  200.00, Rolling score:  121.69, Max rolling score seen:  121.69
+2021-08-20 23:22:56,661 - agents.Trainer - INFO - " Episode 188, Score:  14.00, Max score seen:  200.00, Rolling score:  121.73, Max rolling score seen:  121.73
+2021-08-20 23:22:56,731 - agents.Trainer - INFO - " Episode 189, Score:  14.00, Max score seen:  200.00, Rolling score:  121.77, Max rolling score seen:  121.77
+2021-08-20 23:22:56,796 - agents.Trainer - INFO - " Episode 190, Score:  14.00, Max score seen:  200.00, Rolling score:  121.81, Max rolling score seen:  121.81
+2021-08-20 23:22:56,860 - agents.Trainer - INFO - " Episode 191, Score:  13.00, Max score seen:  200.00, Rolling score:  121.84, Max rolling score seen:  121.84
+2021-08-20 23:22:56,919 - agents.Trainer - INFO - " Episode 192, Score:  12.00, Max score seen:  200.00, Rolling score:  121.85, Max rolling score seen:  121.85
+2021-08-20 23:22:57,021 - agents.Trainer - INFO - " Episode 193, Score:  12.00, Max score seen:  200.00, Rolling score:  121.87, Max rolling score seen:  121.87
+2021-08-20 23:22:57,086 - agents.Trainer - INFO - " Episode 194, Score:  12.00, Max score seen:  200.00, Rolling score:  121.88, Max rolling score seen:  121.88
+2021-08-20 23:22:57,159 - agents.Trainer - INFO - " Episode 195, Score:  12.00, Max score seen:  200.00, Rolling score:  121.89, Max rolling score seen:  121.89
+2021-08-20 23:22:57,229 - agents.Trainer - INFO - " Episode 196, Score:  12.00, Max score seen:  200.00, Rolling score:  121.89, Max rolling score seen:  121.89
+2021-08-20 23:22:57,300 - agents.Trainer - INFO - " Episode 197, Score:  12.00, Max score seen:  200.00, Rolling score:  121.85, Max rolling score seen:  121.89
+2021-08-20 23:22:57,362 - agents.Trainer - INFO - " Episode 198, Score:  12.00, Max score seen:  200.00, Rolling score:  120.21, Max rolling score seen:  121.89
+2021-08-20 23:22:57,430 - agents.Trainer - INFO - " Episode 199, Score:  13.00, Max score seen:  200.00, Rolling score:  118.48, Max rolling score seen:  121.89
+2021-08-20 23:22:57,498 - agents.Trainer - INFO - " Episode 200, Score:  14.00, Max score seen:  200.00, Rolling score:  116.62, Max rolling score seen:  121.89
+2021-08-20 23:22:57,566 - agents.Trainer - INFO - " Episode 201, Score:  14.00, Max score seen:  200.00, Rolling score:  114.76, Max rolling score seen:  121.89
+2021-08-20 23:22:57,630 - agents.Trainer - INFO - " Episode 202, Score:  14.00, Max score seen:  200.00, Rolling score:  112.90, Max rolling score seen:  121.89
+2021-08-20 23:22:57,703 - agents.Trainer - INFO - " Episode 203, Score:  15.00, Max score seen:  200.00, Rolling score:  111.05, Max rolling score seen:  121.89
+2021-08-20 23:22:58,470 - agents.Trainer - INFO - " Episode 204, Score:  156.00, Max score seen:  200.00, Rolling score:  110.61, Max rolling score seen:  121.89
+2021-08-20 23:22:59,431 - agents.Trainer - INFO - " Episode 205, Score:  200.00, Max score seen:  200.00, Rolling score:  110.61, Max rolling score seen:  121.89
+2021-08-20 23:23:00,470 - agents.Trainer - INFO - " Episode 206, Score:  200.00, Max score seen:  200.00, Rolling score:  110.63, Max rolling score seen:  121.89
+2021-08-20 23:23:00,993 - agents.Trainer - INFO - " Episode 207, Score:  98.00, Max score seen:  200.00, Rolling score:  110.10, Max rolling score seen:  121.89
+2021-08-20 23:23:01,971 - agents.Trainer - INFO - " Episode 208, Score:  200.00, Max score seen:  200.00, Rolling score:  110.65, Max rolling score seen:  121.89
+2021-08-20 23:23:02,940 - agents.Trainer - INFO - " Episode 209, Score:  200.00, Max score seen:  200.00, Rolling score:  111.38, Max rolling score seen:  121.89
+2021-08-20 23:23:03,889 - agents.Trainer - INFO - " Episode 210, Score:  200.00, Max score seen:  200.00, Rolling score:  112.21, Max rolling score seen:  121.89
+2021-08-20 23:23:04,867 - agents.Trainer - INFO - " Episode 211, Score:  200.00, Max score seen:  200.00, Rolling score:  112.99, Max rolling score seen:  121.89
+2021-08-20 23:23:05,832 - agents.Trainer - INFO - " Episode 212, Score:  200.00, Max score seen:  200.00, Rolling score:  113.84, Max rolling score seen:  121.89
+2021-08-20 23:23:06,931 - agents.Trainer - INFO - " Episode 213, Score:  200.00, Max score seen:  200.00, Rolling score:  114.65, Max rolling score seen:  121.89
+2021-08-20 23:23:07,931 - agents.Trainer - INFO - " Episode 214, Score:  200.00, Max score seen:  200.00, Rolling score:  115.49, Max rolling score seen:  121.89
+2021-08-20 23:23:08,915 - agents.Trainer - INFO - " Episode 215, Score:  200.00, Max score seen:  200.00, Rolling score:  116.31, Max rolling score seen:  121.89
+2021-08-20 23:23:09,903 - agents.Trainer - INFO - " Episode 216, Score:  200.00, Max score seen:  200.00, Rolling score:  117.21, Max rolling score seen:  121.89
+2021-08-20 23:23:10,883 - agents.Trainer - INFO - " Episode 217, Score:  200.00, Max score seen:  200.00, Rolling score:  117.99, Max rolling score seen:  121.89
+2021-08-20 23:23:11,860 - agents.Trainer - INFO - " Episode 218, Score:  200.00, Max score seen:  200.00, Rolling score:  117.99, Max rolling score seen:  121.89
+2021-08-20 23:23:12,856 - agents.Trainer - INFO - " Episode 219, Score:  200.00, Max score seen:  200.00, Rolling score:  117.99, Max rolling score seen:  121.89
+2021-08-20 23:23:13,863 - agents.Trainer - INFO - " Episode 220, Score:  200.00, Max score seen:  200.00, Rolling score:  117.99, Max rolling score seen:  121.89
+2021-08-20 23:23:14,835 - agents.Trainer - INFO - " Episode 221, Score:  200.00, Max score seen:  200.00, Rolling score:  118.08, Max rolling score seen:  121.89
+2021-08-20 23:23:15,820 - agents.Trainer - INFO - " Episode 222, Score:  200.00, Max score seen:  200.00, Rolling score:  118.72, Max rolling score seen:  121.89
+2021-08-20 23:23:16,771 - agents.Trainer - INFO - " Episode 223, Score:  200.00, Max score seen:  200.00, Rolling score:  119.44, Max rolling score seen:  121.89
+2021-08-20 23:23:17,723 - agents.Trainer - INFO - " Episode 224, Score:  200.00, Max score seen:  200.00, Rolling score:  120.07, Max rolling score seen:  121.89
+2021-08-20 23:23:18,683 - agents.Trainer - INFO - " Episode 225, Score:  200.00, Max score seen:  200.00, Rolling score:  120.86, Max rolling score seen:  121.89
+2021-08-20 23:23:19,659 - agents.Trainer - INFO - " Episode 226, Score:  200.00, Max score seen:  200.00, Rolling score:  121.70, Max rolling score seen:  121.89
+2021-08-20 23:23:20,654 - agents.Trainer - INFO - " Episode 227, Score:  200.00, Max score seen:  200.00, Rolling score:  122.61, Max rolling score seen:  122.61
+2021-08-20 23:23:21,624 - agents.Trainer - INFO - " Episode 228, Score:  200.00, Max score seen:  200.00, Rolling score:  123.45, Max rolling score seen:  123.45
+2021-08-20 23:23:22,578 - agents.Trainer - INFO - " Episode 229, Score:  200.00, Max score seen:  200.00, Rolling score:  124.28, Max rolling score seen:  124.28
+2021-08-20 23:23:23,532 - agents.Trainer - INFO - " Episode 230, Score:  200.00, Max score seen:  200.00, Rolling score:  125.00, Max rolling score seen:  125.00
+2021-08-20 23:23:24,506 - agents.Trainer - INFO - " Episode 231, Score:  200.00, Max score seen:  200.00, Rolling score:  125.70, Max rolling score seen:  125.70
+2021-08-20 23:23:25,467 - agents.Trainer - INFO - " Episode 232, Score:  200.00, Max score seen:  200.00, Rolling score:  125.74, Max rolling score seen:  125.74
+2021-08-20 23:23:26,464 - agents.Trainer - INFO - " Episode 233, Score:  200.00, Max score seen:  200.00, Rolling score:  126.35, Max rolling score seen:  126.35
+2021-08-20 23:23:27,457 - agents.Trainer - INFO - " Episode 234, Score:  200.00, Max score seen:  200.00, Rolling score:  127.26, Max rolling score seen:  127.26
+2021-08-20 23:23:28,417 - agents.Trainer - INFO - " Episode 235, Score:  200.00, Max score seen:  200.00, Rolling score:  127.26, Max rolling score seen:  127.26
+2021-08-20 23:23:29,438 - agents.Trainer - INFO - " Episode 236, Score:  200.00, Max score seen:  200.00, Rolling score:  128.37, Max rolling score seen:  128.37
+2021-08-20 23:23:30,421 - agents.Trainer - INFO - " Episode 237, Score:  200.00, Max score seen:  200.00, Rolling score:  129.52, Max rolling score seen:  129.52
+2021-08-20 23:23:31,455 - agents.Trainer - INFO - " Episode 238, Score:  200.00, Max score seen:  200.00, Rolling score:  130.31, Max rolling score seen:  130.31
+2021-08-20 23:23:32,426 - agents.Trainer - INFO - " Episode 239, Score:  200.00, Max score seen:  200.00, Rolling score:  131.09, Max rolling score seen:  131.09
+2021-08-20 23:23:33,428 - agents.Trainer - INFO - " Episode 240, Score:  200.00, Max score seen:  200.00, Rolling score:  132.30, Max rolling score seen:  132.30
+2021-08-20 23:23:34,446 - agents.Trainer - INFO - " Episode 241, Score:  200.00, Max score seen:  200.00, Rolling score:  134.13, Max rolling score seen:  134.13
+2021-08-20 23:23:35,411 - agents.Trainer - INFO - " Episode 242, Score:  200.00, Max score seen:  200.00, Rolling score:  135.93, Max rolling score seen:  135.93
+2021-08-20 23:23:36,358 - agents.Trainer - INFO - " Episode 243, Score:  200.00, Max score seen:  200.00, Rolling score:  137.76, Max rolling score seen:  137.76
+2021-08-20 23:23:37,326 - agents.Trainer - INFO - " Episode 244, Score:  200.00, Max score seen:  200.00, Rolling score:  139.59, Max rolling score seen:  139.59
+2021-08-20 23:23:38,284 - agents.Trainer - INFO - " Episode 245, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:39,273 - agents.Trainer - INFO - " Episode 246, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:40,268 - agents.Trainer - INFO - " Episode 247, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:41,256 - agents.Trainer - INFO - " Episode 248, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:42,227 - agents.Trainer - INFO - " Episode 249, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:43,212 - agents.Trainer - INFO - " Episode 250, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:44,199 - agents.Trainer - INFO - " Episode 251, Score:  200.00, Max score seen:  200.00, Rolling score:  141.40, Max rolling score seen:  141.40
+2021-08-20 23:23:44,254 - agents.Trainer - INFO - " Episode 252, Score:  11.00, Max score seen:  200.00, Rolling score:  139.51, Max rolling score seen:  141.40
+2021-08-20 23:23:44,320 - agents.Trainer - INFO - " Episode 253, Score:  11.00, Max score seen:  200.00, Rolling score:  137.62, Max rolling score seen:  141.40
+2021-08-20 23:23:44,384 - agents.Trainer - INFO - " Episode 254, Score:  11.00, Max score seen:  200.00, Rolling score:  135.73, Max rolling score seen:  141.40
+2021-08-20 23:23:44,450 - agents.Trainer - INFO - " Episode 255, Score:  11.00, Max score seen:  200.00, Rolling score:  133.84, Max rolling score seen:  141.40
+2021-08-20 23:23:44,515 - agents.Trainer - INFO - " Episode 256, Score:  11.00, Max score seen:  200.00, Rolling score:  131.95, Max rolling score seen:  141.40
+2021-08-20 23:23:44,573 - agents.Trainer - INFO - " Episode 257, Score:  11.00, Max score seen:  200.00, Rolling score:  130.06, Max rolling score seen:  141.40
+2021-08-20 23:23:44,635 - agents.Trainer - INFO - " Episode 258, Score:  11.00, Max score seen:  200.00, Rolling score:  128.17, Max rolling score seen:  141.40
+2021-08-20 23:23:44,694 - agents.Trainer - INFO - " Episode 259, Score:  10.00, Max score seen:  200.00, Rolling score:  126.27, Max rolling score seen:  141.40
+2021-08-20 23:23:44,758 - agents.Trainer - INFO - " Episode 260, Score:  11.00, Max score seen:  200.00, Rolling score:  124.38, Max rolling score seen:  141.40
+2021-08-20 23:23:44,818 - agents.Trainer - INFO - " Episode 261, Score:  11.00, Max score seen:  200.00, Rolling score:  122.49, Max rolling score seen:  141.40
+2021-08-20 23:23:44,873 - agents.Trainer - INFO - " Episode 262, Score:  11.00, Max score seen:  200.00, Rolling score:  120.60, Max rolling score seen:  141.40
+2021-08-20 23:23:44,925 - agents.Trainer - INFO - " Episode 263, Score:  11.00, Max score seen:  200.00, Rolling score:  118.71, Max rolling score seen:  141.40
+2021-08-20 23:23:44,976 - agents.Trainer - INFO - " Episode 264, Score:  11.00, Max score seen:  200.00, Rolling score:  116.82, Max rolling score seen:  141.40
+2021-08-20 23:23:45,030 - agents.Trainer - INFO - " Episode 265, Score:  11.00, Max score seen:  200.00, Rolling score:  116.41, Max rolling score seen:  141.40
+2021-08-20 23:23:45,079 - agents.Trainer - INFO - " Episode 266, Score:  10.00, Max score seen:  200.00, Rolling score:  114.83, Max rolling score seen:  141.40
+2021-08-20 23:23:45,125 - agents.Trainer - INFO - " Episode 267, Score:  10.00, Max score seen:  200.00, Rolling score:  113.59, Max rolling score seen:  141.40
+2021-08-20 23:23:45,176 - agents.Trainer - INFO - " Episode 268, Score:  10.00, Max score seen:  200.00, Rolling score:  113.27, Max rolling score seen:  141.40
+2021-08-20 23:23:45,222 - agents.Trainer - INFO - " Episode 269, Score:  10.00, Max score seen:  200.00, Rolling score:  112.76, Max rolling score seen:  141.40
+2021-08-20 23:23:45,271 - agents.Trainer - INFO - " Episode 270, Score:  10.00, Max score seen:  200.00, Rolling score:  112.07, Max rolling score seen:  141.40
+2021-08-20 23:23:45,326 - agents.Trainer - INFO - " Episode 271, Score:  10.00, Max score seen:  200.00, Rolling score:  111.31, Max rolling score seen:  141.40
+2021-08-20 23:23:45,380 - agents.Trainer - INFO - " Episode 272, Score:  10.00, Max score seen:  200.00, Rolling score:  110.92, Max rolling score seen:  141.40
+2021-08-20 23:23:45,431 - agents.Trainer - INFO - " Episode 273, Score:  10.00, Max score seen:  200.00, Rolling score:  110.58, Max rolling score seen:  141.40
+2021-08-20 23:23:45,486 - agents.Trainer - INFO - " Episode 274, Score:  10.00, Max score seen:  200.00, Rolling score:  110.30, Max rolling score seen:  141.40
+2021-08-20 23:23:45,541 - agents.Trainer - INFO - " Episode 275, Score:  10.00, Max score seen:  200.00, Rolling score:  110.02, Max rolling score seen:  141.40
+2021-08-20 23:23:45,590 - agents.Trainer - INFO - " Episode 276, Score:  10.00, Max score seen:  200.00, Rolling score:  109.72, Max rolling score seen:  141.40
+2021-08-20 23:23:45,642 - agents.Trainer - INFO - " Episode 277, Score:  10.00, Max score seen:  200.00, Rolling score:  109.41, Max rolling score seen:  141.40
+2021-08-20 23:23:45,697 - agents.Trainer - INFO - " Episode 278, Score:  10.00, Max score seen:  200.00, Rolling score:  108.89, Max rolling score seen:  141.40
+2021-08-20 23:23:45,753 - agents.Trainer - INFO - " Episode 279, Score:  10.00, Max score seen:  200.00, Rolling score:  108.27, Max rolling score seen:  141.40
+2021-08-20 23:23:45,809 - agents.Trainer - INFO - " Episode 280, Score:  10.00, Max score seen:  200.00, Rolling score:  106.37, Max rolling score seen:  141.40
+2021-08-20 23:23:45,873 - agents.Trainer - INFO - " Episode 281, Score:  10.00, Max score seen:  200.00, Rolling score:  105.31, Max rolling score seen:  141.40
+2021-08-20 23:23:45,928 - agents.Trainer - INFO - " Episode 282, Score:  10.00, Max score seen:  200.00, Rolling score:  103.41, Max rolling score seen:  141.40
+2021-08-20 23:23:45,981 - agents.Trainer - INFO - " Episode 283, Score:  10.00, Max score seen:  200.00, Rolling score:  101.51, Max rolling score seen:  141.40
+2021-08-20 23:23:46,034 - agents.Trainer - INFO - " Episode 284, Score:  10.00, Max score seen:  200.00, Rolling score:  100.49, Max rolling score seen:  141.40
+2021-08-20 23:23:46,087 - agents.Trainer - INFO - " Episode 285, Score:  10.00, Max score seen:  200.00, Rolling score:  100.44, Max rolling score seen:  141.40
+2021-08-20 23:23:46,140 - agents.Trainer - INFO - " Episode 286, Score:  10.00, Max score seen:  200.00, Rolling score:  100.40, Max rolling score seen:  141.40
+2021-08-20 23:23:46,194 - agents.Trainer - INFO - " Episode 287, Score:  10.00, Max score seen:  200.00, Rolling score:  100.36, Max rolling score seen:  141.40
+2021-08-20 23:23:46,256 - agents.Trainer - INFO - " Episode 288, Score:  11.00, Max score seen:  200.00, Rolling score:  100.33, Max rolling score seen:  141.40
+2021-08-20 23:23:47,326 - agents.Trainer - INFO - " Episode 289, Score:  200.00, Max score seen:  200.00, Rolling score:  102.19, Max rolling score seen:  141.40
+2021-08-20 23:23:48,291 - agents.Trainer - INFO - " Episode 290, Score:  200.00, Max score seen:  200.00, Rolling score:  104.05, Max rolling score seen:  141.40
+2021-08-20 23:23:49,255 - agents.Trainer - INFO - " Episode 291, Score:  200.00, Max score seen:  200.00, Rolling score:  105.92, Max rolling score seen:  141.40
+2021-08-20 23:23:50,222 - agents.Trainer - INFO - " Episode 292, Score:  200.00, Max score seen:  200.00, Rolling score:  107.80, Max rolling score seen:  141.40
+2021-08-20 23:23:51,184 - agents.Trainer - INFO - " Episode 293, Score:  200.00, Max score seen:  200.00, Rolling score:  109.68, Max rolling score seen:  141.40
+2021-08-20 23:23:52,133 - agents.Trainer - INFO - " Episode 294, Score:  200.00, Max score seen:  200.00, Rolling score:  111.56, Max rolling score seen:  141.40
+2021-08-20 23:23:53,174 - agents.Trainer - INFO - " Episode 295, Score:  200.00, Max score seen:  200.00, Rolling score:  113.44, Max rolling score seen:  141.40
+2021-08-20 23:23:54,169 - agents.Trainer - INFO - " Episode 296, Score:  200.00, Max score seen:  200.00, Rolling score:  115.32, Max rolling score seen:  141.40
+2021-08-20 23:23:55,154 - agents.Trainer - INFO - " Episode 297, Score:  200.00, Max score seen:  200.00, Rolling score:  117.20, Max rolling score seen:  141.40
+2021-08-20 23:23:56,112 - agents.Trainer - INFO - " Episode 298, Score:  200.00, Max score seen:  200.00, Rolling score:  119.08, Max rolling score seen:  141.40
+2021-08-20 23:23:57,069 - agents.Trainer - INFO - " Episode 299, Score:  200.00, Max score seen:  200.00, Rolling score:  120.95, Max rolling score seen:  141.40
+2021-08-20 23:23:58,088 - agents.Trainer - INFO - " Episode 300, Score:  200.00, Max score seen:  200.00, Rolling score:  122.81, Max rolling score seen:  141.40
+2021-08-20 23:23:59,071 - agents.Trainer - INFO - " Episode 301, Score:  200.00, Max score seen:  200.00, Rolling score:  124.67, Max rolling score seen:  141.40
+2021-08-20 23:24:00,081 - agents.Trainer - INFO - " Episode 302, Score:  200.00, Max score seen:  200.00, Rolling score:  126.53, Max rolling score seen:  141.40
+2021-08-20 23:24:01,055 - agents.Trainer - INFO - " Episode 303, Score:  200.00, Max score seen:  200.00, Rolling score:  128.38, Max rolling score seen:  141.40
+2021-08-20 23:24:02,042 - agents.Trainer - INFO - " Episode 304, Score:  200.00, Max score seen:  200.00, Rolling score:  128.82, Max rolling score seen:  141.40
+2021-08-20 23:24:02,989 - agents.Trainer - INFO - " Episode 305, Score:  200.00, Max score seen:  200.00, Rolling score:  128.82, Max rolling score seen:  141.40
+2021-08-20 23:24:03,968 - agents.Trainer - INFO - " Episode 306, Score:  200.00, Max score seen:  200.00, Rolling score:  128.82, Max rolling score seen:  141.40
+2021-08-20 23:24:04,942 - agents.Trainer - INFO - " Episode 307, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:05,930 - agents.Trainer - INFO - " Episode 308, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:06,933 - agents.Trainer - INFO - " Episode 309, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:07,913 - agents.Trainer - INFO - " Episode 310, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:08,878 - agents.Trainer - INFO - " Episode 311, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:09,866 - agents.Trainer - INFO - " Episode 312, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:10,844 - agents.Trainer - INFO - " Episode 313, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:11,813 - agents.Trainer - INFO - " Episode 314, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:12,822 - agents.Trainer - INFO - " Episode 315, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:13,781 - agents.Trainer - INFO - " Episode 316, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:14,735 - agents.Trainer - INFO - " Episode 317, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:15,717 - agents.Trainer - INFO - " Episode 318, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:16,735 - agents.Trainer - INFO - " Episode 319, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:17,724 - agents.Trainer - INFO - " Episode 320, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:18,734 - agents.Trainer - INFO - " Episode 321, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:19,737 - agents.Trainer - INFO - " Episode 322, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:20,716 - agents.Trainer - INFO - " Episode 323, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:21,690 - agents.Trainer - INFO - " Episode 324, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:22,661 - agents.Trainer - INFO - " Episode 325, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:23,629 - agents.Trainer - INFO - " Episode 326, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:24,626 - agents.Trainer - INFO - " Episode 327, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:25,588 - agents.Trainer - INFO - " Episode 328, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:26,583 - agents.Trainer - INFO - " Episode 329, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:27,550 - agents.Trainer - INFO - " Episode 330, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:28,506 - agents.Trainer - INFO - " Episode 331, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:29,489 - agents.Trainer - INFO - " Episode 332, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:30,442 - agents.Trainer - INFO - " Episode 333, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:31,413 - agents.Trainer - INFO - " Episode 334, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:32,405 - agents.Trainer - INFO - " Episode 335, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:33,369 - agents.Trainer - INFO - " Episode 336, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:34,307 - agents.Trainer - INFO - " Episode 337, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:35,275 - agents.Trainer - INFO - " Episode 338, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:36,223 - agents.Trainer - INFO - " Episode 339, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:37,192 - agents.Trainer - INFO - " Episode 340, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:38,146 - agents.Trainer - INFO - " Episode 341, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:39,136 - agents.Trainer - INFO - " Episode 342, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:40,106 - agents.Trainer - INFO - " Episode 343, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:41,075 - agents.Trainer - INFO - " Episode 344, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:42,058 - agents.Trainer - INFO - " Episode 345, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:43,033 - agents.Trainer - INFO - " Episode 346, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:43,989 - agents.Trainer - INFO - " Episode 347, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:44,991 - agents.Trainer - INFO - " Episode 348, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:45,962 - agents.Trainer - INFO - " Episode 349, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:46,949 - agents.Trainer - INFO - " Episode 350, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:47,935 - agents.Trainer - INFO - " Episode 351, Score:  200.00, Max score seen:  200.00, Rolling score:  129.84, Max rolling score seen:  141.40
+2021-08-20 23:24:48,949 - agents.Trainer - INFO - " Episode 352, Score:  200.00, Max score seen:  200.00, Rolling score:  131.73, Max rolling score seen:  141.40
+2021-08-20 23:24:49,936 - agents.Trainer - INFO - " Episode 353, Score:  200.00, Max score seen:  200.00, Rolling score:  133.62, Max rolling score seen:  141.40
+2021-08-20 23:24:50,918 - agents.Trainer - INFO - " Episode 354, Score:  200.00, Max score seen:  200.00, Rolling score:  135.51, Max rolling score seen:  141.40
+2021-08-20 23:24:51,923 - agents.Trainer - INFO - " Episode 355, Score:  200.00, Max score seen:  200.00, Rolling score:  137.40, Max rolling score seen:  141.40
+2021-08-20 23:24:52,920 - agents.Trainer - INFO - " Episode 356, Score:  200.00, Max score seen:  200.00, Rolling score:  139.29, Max rolling score seen:  141.40
+2021-08-20 23:24:53,909 - agents.Trainer - INFO - " Episode 357, Score:  200.00, Max score seen:  200.00, Rolling score:  141.18, Max rolling score seen:  141.40
+2021-08-20 23:24:54,934 - agents.Trainer - INFO - " Episode 358, Score:  200.00, Max score seen:  200.00, Rolling score:  143.07, Max rolling score seen:  143.07
+2021-08-20 23:24:55,950 - agents.Trainer - INFO - " Episode 359, Score:  200.00, Max score seen:  200.00, Rolling score:  144.97, Max rolling score seen:  144.97
+2021-08-20 23:24:56,967 - agents.Trainer - INFO - " Episode 360, Score:  200.00, Max score seen:  200.00, Rolling score:  146.86, Max rolling score seen:  146.86
+2021-08-20 23:24:57,971 - agents.Trainer - INFO - " Episode 361, Score:  200.00, Max score seen:  200.00, Rolling score:  148.75, Max rolling score seen:  148.75
+2021-08-20 23:24:58,963 - agents.Trainer - INFO - " Episode 362, Score:  200.00, Max score seen:  200.00, Rolling score:  150.64, Max rolling score seen:  150.64
+2021-08-20 23:24:59,970 - agents.Trainer - INFO - " Episode 363, Score:  200.00, Max score seen:  200.00, Rolling score:  152.53, Max rolling score seen:  152.53
+2021-08-20 23:25:00,990 - agents.Trainer - INFO - " Episode 364, Score:  200.00, Max score seen:  200.00, Rolling score:  154.42, Max rolling score seen:  154.42
+2021-08-20 23:25:02,051 - agents.Trainer - INFO - " Episode 365, Score:  200.00, Max score seen:  200.00, Rolling score:  156.31, Max rolling score seen:  156.31
+2021-08-20 23:25:03,087 - agents.Trainer - INFO - " Episode 366, Score:  200.00, Max score seen:  200.00, Rolling score:  158.21, Max rolling score seen:  158.21
+2021-08-20 23:25:04,106 - agents.Trainer - INFO - " Episode 367, Score:  200.00, Max score seen:  200.00, Rolling score:  160.11, Max rolling score seen:  160.11
+2021-08-20 23:25:05,142 - agents.Trainer - INFO - " Episode 368, Score:  200.00, Max score seen:  200.00, Rolling score:  162.01, Max rolling score seen:  162.01
+2021-08-20 23:25:06,147 - agents.Trainer - INFO - " Episode 369, Score:  200.00, Max score seen:  200.00, Rolling score:  163.91, Max rolling score seen:  163.91
+2021-08-20 23:25:07,172 - agents.Trainer - INFO - " Episode 370, Score:  200.00, Max score seen:  200.00, Rolling score:  165.81, Max rolling score seen:  165.81
+2021-08-20 23:25:08,185 - agents.Trainer - INFO - " Episode 371, Score:  200.00, Max score seen:  200.00, Rolling score:  167.71, Max rolling score seen:  167.71
+2021-08-20 23:25:09,205 - agents.Trainer - INFO - " Episode 372, Score:  200.00, Max score seen:  200.00, Rolling score:  169.61, Max rolling score seen:  169.61
+2021-08-20 23:25:10,333 - agents.Trainer - INFO - " Episode 373, Score:  200.00, Max score seen:  200.00, Rolling score:  171.51, Max rolling score seen:  171.51
+2021-08-20 23:25:11,345 - agents.Trainer - INFO - " Episode 374, Score:  200.00, Max score seen:  200.00, Rolling score:  173.41, Max rolling score seen:  173.41
+2021-08-20 23:25:12,326 - agents.Trainer - INFO - " Episode 375, Score:  200.00, Max score seen:  200.00, Rolling score:  175.31, Max rolling score seen:  175.31
+2021-08-20 23:25:13,330 - agents.Trainer - INFO - " Episode 376, Score:  200.00, Max score seen:  200.00, Rolling score:  177.21, Max rolling score seen:  177.21
+2021-08-20 23:25:14,335 - agents.Trainer - INFO - " Episode 377, Score:  200.00, Max score seen:  200.00, Rolling score:  179.11, Max rolling score seen:  179.11
+2021-08-20 23:25:15,326 - agents.Trainer - INFO - " Episode 378, Score:  200.00, Max score seen:  200.00, Rolling score:  181.01, Max rolling score seen:  181.01
+2021-08-20 23:25:16,305 - agents.Trainer - INFO - " Episode 379, Score:  200.00, Max score seen:  200.00, Rolling score:  182.91, Max rolling score seen:  182.91
+2021-08-20 23:25:17,283 - agents.Trainer - INFO - " Episode 380, Score:  200.00, Max score seen:  200.00, Rolling score:  184.81, Max rolling score seen:  184.81
+2021-08-20 23:25:18,250 - agents.Trainer - INFO - " Episode 381, Score:  200.00, Max score seen:  200.00, Rolling score:  186.71, Max rolling score seen:  186.71
+2021-08-20 23:25:19,237 - agents.Trainer - INFO - " Episode 382, Score:  200.00, Max score seen:  200.00, Rolling score:  188.61, Max rolling score seen:  188.61
+2021-08-20 23:25:20,245 - agents.Trainer - INFO - " Episode 383, Score:  200.00, Max score seen:  200.00, Rolling score:  190.51, Max rolling score seen:  190.51
+2021-08-20 23:25:21,254 - agents.Trainer - INFO - " Episode 384, Score:  200.00, Max score seen:  200.00, Rolling score:  192.41, Max rolling score seen:  192.41
+2021-08-20 23:25:22,249 - agents.Trainer - INFO - " Episode 385, Score:  200.00, Max score seen:  200.00, Rolling score:  194.31, Max rolling score seen:  194.31
+2021-08-20 23:25:23,227 - agents.Trainer - INFO - " Episode 386, Score:  200.00, Max score seen:  200.00, Rolling score:  196.21, Max rolling score seen:  196.21
+2021-08-20 23:25:24,214 - agents.Trainer - INFO - " Episode 387, Score:  200.00, Max score seen:  200.00, Rolling score:  198.11, Max rolling score seen:  198.11
+2021-08-20 23:25:25,216 - agents.Trainer - INFO - " Episode 388, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:26,203 - agents.Trainer - INFO - " Episode 389, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:27,208 - agents.Trainer - INFO - " Episode 390, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:28,213 - agents.Trainer - INFO - " Episode 391, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:29,225 - agents.Trainer - INFO - " Episode 392, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:30,242 - agents.Trainer - INFO - " Episode 393, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:31,249 - agents.Trainer - INFO - " Episode 394, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:32,234 - agents.Trainer - INFO - " Episode 395, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:33,276 - agents.Trainer - INFO - " Episode 396, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:34,307 - agents.Trainer - INFO - " Episode 397, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:35,322 - agents.Trainer - INFO - " Episode 398, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:36,336 - agents.Trainer - INFO - " Episode 399, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:37,323 - agents.Trainer - INFO - " Episode 400, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:38,297 - agents.Trainer - INFO - " Episode 401, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:39,278 - agents.Trainer - INFO - " Episode 402, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:40,273 - agents.Trainer - INFO - " Episode 403, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:41,275 - agents.Trainer - INFO - " Episode 404, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:42,267 - agents.Trainer - INFO - " Episode 405, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:43,264 - agents.Trainer - INFO - " Episode 406, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:44,256 - agents.Trainer - INFO - " Episode 407, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:45,256 - agents.Trainer - INFO - " Episode 408, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:46,252 - agents.Trainer - INFO - " Episode 409, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:47,286 - agents.Trainer - INFO - " Episode 410, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:48,272 - agents.Trainer - INFO - " Episode 411, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:49,260 - agents.Trainer - INFO - " Episode 412, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:50,301 - agents.Trainer - INFO - " Episode 413, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:51,329 - agents.Trainer - INFO - " Episode 414, Score:  200.00, Max score seen:  200.00, Rolling score:  200.00, Max rolling score seen:  200.00
+2021-08-20 23:25:52,286 - agents.Trainer - INFO - " Episode 415, Score:  191.00, Max score seen:  200.00, Rolling score:  199.91, Max rolling score seen:  200.00
+2021-08-20 23:25:53,204 - agents.Trainer - INFO - " Episode 416, Score:  184.00, Max score seen:  200.00, Rolling score:  199.75, Max rolling score seen:  200.00
+2021-08-20 23:25:54,085 - agents.Trainer - INFO - " Episode 417, Score:  171.00, Max score seen:  200.00, Rolling score:  199.46, Max rolling score seen:  200.00
+2021-08-20 23:25:54,901 - agents.Trainer - INFO - " Episode 418, Score:  163.00, Max score seen:  200.00, Rolling score:  199.09, Max rolling score seen:  200.00
+2021-08-20 23:25:55,684 - agents.Trainer - INFO - " Episode 419, Score:  157.00, Max score seen:  200.00, Rolling score:  198.66, Max rolling score seen:  200.00
+2021-08-20 23:25:56,460 - agents.Trainer - INFO - " Episode 420, Score:  156.00, Max score seen:  200.00, Rolling score:  198.22, Max rolling score seen:  200.00
+2021-08-20 23:25:57,176 - agents.Trainer - INFO - " Episode 421, Score:  143.00, Max score seen:  200.00, Rolling score:  197.65, Max rolling score seen:  200.00
+2021-08-20 23:25:57,882 - agents.Trainer - INFO - " Episode 422, Score:  140.00, Max score seen:  200.00, Rolling score:  197.05, Max rolling score seen:  200.00
+2021-08-20 23:25:58,578 - agents.Trainer - INFO - " Episode 423, Score:  135.00, Max score seen:  200.00, Rolling score:  196.40, Max rolling score seen:  200.00
+2021-08-20 23:25:59,240 - agents.Trainer - INFO - " Episode 424, Score:  133.00, Max score seen:  200.00, Rolling score:  195.73, Max rolling score seen:  200.00
+2021-08-20 23:25:59,916 - agents.Trainer - INFO - " Episode 425, Score:  131.00, Max score seen:  200.00, Rolling score:  195.04, Max rolling score seen:  200.00
+2021-08-20 23:26:00,535 - agents.Trainer - INFO - " Episode 426, Score:  128.00, Max score seen:  200.00, Rolling score:  194.32, Max rolling score seen:  200.00
+2021-08-20 23:26:01,166 - agents.Trainer - INFO - " Episode 427, Score:  126.00, Max score seen:  200.00, Rolling score:  193.58, Max rolling score seen:  200.00
+2021-08-20 23:26:01,751 - agents.Trainer - INFO - " Episode 428, Score:  119.00, Max score seen:  200.00, Rolling score:  192.77, Max rolling score seen:  200.00
+2021-08-20 23:26:02,347 - agents.Trainer - INFO - " Episode 429, Score:  118.00, Max score seen:  200.00, Rolling score:  191.95, Max rolling score seen:  200.00
+2021-08-20 23:26:02,917 - agents.Trainer - INFO - " Episode 430, Score:  116.00, Max score seen:  200.00, Rolling score:  191.11, Max rolling score seen:  200.00
+2021-08-20 23:26:03,489 - agents.Trainer - INFO - " Episode 431, Score:  113.00, Max score seen:  200.00, Rolling score:  190.24, Max rolling score seen:  200.00
+2021-08-20 23:26:04,042 - agents.Trainer - INFO - " Episode 432, Score:  112.00, Max score seen:  200.00, Rolling score:  189.36, Max rolling score seen:  200.00
+2021-08-20 23:26:04,614 - agents.Trainer - INFO - " Episode 433, Score:  111.00, Max score seen:  200.00, Rolling score:  188.47, Max rolling score seen:  200.00
+2021-08-20 23:26:05,165 - agents.Trainer - INFO - " Episode 434, Score:  110.00, Max score seen:  200.00, Rolling score:  187.57, Max rolling score seen:  200.00
+2021-08-20 23:26:05,703 - agents.Trainer - INFO - " Episode 435, Score:  106.00, Max score seen:  200.00, Rolling score:  186.63, Max rolling score seen:  200.00
+2021-08-20 23:26:06,227 - agents.Trainer - INFO - " Episode 436, Score:  106.00, Max score seen:  200.00, Rolling score:  185.69, Max rolling score seen:  200.00
+2021-08-20 23:26:06,754 - agents.Trainer - INFO - " Episode 437, Score:  105.00, Max score seen:  200.00, Rolling score:  184.74, Max rolling score seen:  200.00
+2021-08-20 23:26:07,280 - agents.Trainer - INFO - " Episode 438, Score:  105.00, Max score seen:  200.00, Rolling score:  183.79, Max rolling score seen:  200.00
+2021-08-20 23:26:07,798 - agents.Trainer - INFO - " Episode 439, Score:  105.00, Max score seen:  200.00, Rolling score:  182.84, Max rolling score seen:  200.00
+2021-08-20 23:26:08,327 - agents.Trainer - INFO - " Episode 440, Score:  105.00, Max score seen:  200.00, Rolling score:  181.89, Max rolling score seen:  200.00
+2021-08-20 23:26:08,846 - agents.Trainer - INFO - " Episode 441, Score:  105.00, Max score seen:  200.00, Rolling score:  180.94, Max rolling score seen:  200.00
+2021-08-20 23:26:09,384 - agents.Trainer - INFO - " Episode 442, Score:  105.00, Max score seen:  200.00, Rolling score:  179.99, Max rolling score seen:  200.00
+2021-08-20 23:26:09,910 - agents.Trainer - INFO - " Episode 443, Score:  105.00, Max score seen:  200.00, Rolling score:  179.04, Max rolling score seen:  200.00
+2021-08-20 23:26:10,434 - agents.Trainer - INFO - " Episode 444, Score:  105.00, Max score seen:  200.00, Rolling score:  178.09, Max rolling score seen:  200.00
+2021-08-20 23:26:10,948 - agents.Trainer - INFO - " Episode 445, Score:  104.00, Max score seen:  200.00, Rolling score:  177.13, Max rolling score seen:  200.00
+2021-08-20 23:26:11,462 - agents.Trainer - INFO - " Episode 446, Score:  104.00, Max score seen:  200.00, Rolling score:  176.17, Max rolling score seen:  200.00
+2021-08-20 23:26:11,977 - agents.Trainer - INFO - " Episode 447, Score:  104.00, Max score seen:  200.00, Rolling score:  175.21, Max rolling score seen:  200.00
+2021-08-20 23:26:12,501 - agents.Trainer - INFO - " Episode 448, Score:  105.00, Max score seen:  200.00, Rolling score:  174.26, Max rolling score seen:  200.00
+2021-08-20 23:26:13,040 - agents.Trainer - INFO - " Episode 449, Score:  107.00, Max score seen:  200.00, Rolling score:  173.33, Max rolling score seen:  200.00
+2021-08-20 23:26:13,587 - agents.Trainer - INFO - " Episode 450, Score:  107.00, Max score seen:  200.00, Rolling score:  172.40, Max rolling score seen:  200.00
+2021-08-20 23:26:13,588 - agents.Trainer - INFO - DQN achieved required score at episode 385 
+
+2021-08-20 23:26:13,590 - agents.Trainer - INFO - Time taken: 276.4348781108856
