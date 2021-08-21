@@ -4,6 +4,7 @@ class Config(object):
         self.train_render = False  # 训练模式渲染
         self.eval_render = False  # 评估模式渲染
         self.cur_run_data_dir = None  # 本次运行数据存放目录
+        self.model_load_path = None  # 模型加载路径
         self.seed = None  # 随机种子
         self.environment = None  # 环境
         self.requirements_to_solve_game = None  # 是否要求解决问题

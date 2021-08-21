@@ -11,6 +11,7 @@ from gym import wrappers
 
 class Trainer(object):
     """使用的智能体运行游戏。 可选择将结果可视化并保存"""
+    
     def __init__(self, config, agents):
         self.config = config
         self.agents = agents
@@ -22,7 +23,6 @@ class Trainer(object):
         self.results = None
         self.colors = ["red", "blue", "green", "orange", "yellow", "purple"]
         self.colour_ix = 0
-        self.config.terminal_logger
 
     def create_agent_to_agent_group_dictionary(self):
         """创建一个将智能体映射到更广泛的智能体组的字典"""
@@ -89,7 +89,7 @@ class Trainer(object):
                 self.visualise_overall_agent_results(agent_rolling_score_results, agent_name, show_mean_and_std_range=True)
         if self.config.file_to_save_data_results: self.save_obj(self.results, self.config.file_to_save_data_results)
         if self.config.file_to_save_results_graph: plt.savefig(self.config.file_to_save_results_graph, bbox_inches="tight")
-        plt.show()
+        # plt.show()
         return self.results
 
     def create_object_to_store_results(self):
@@ -139,7 +139,9 @@ class Trainer(object):
             if self.config.visualise_individual_results:  # 每一轮结果可视化
                 # 可视化滚动均值结果列表
                 self.visualise_overall_agent_results([rolling_scores], agent_name, show_each_run=True)
-                plt.show()
+                plt.savefig(self.cur_run_data_dir + "/models/" + "{}_{}_{}".format(agent_number, agent_round, agent_name) + ".png", bbox_inches="tight")
+                # plt.show()
+                plt.close()
             agent_round += 1
         self.results[agent_name] = agent_results  # 每一个智能体n轮训练结果
 

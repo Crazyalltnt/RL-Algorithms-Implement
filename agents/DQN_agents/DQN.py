@@ -1,5 +1,6 @@
 import random
 import os
+import time
 import numpy as np
 import torch
 import torch.optim as optim
@@ -20,9 +21,10 @@ class DQN(Base_Agent):
         self.agent_round = config.agent_round
         self.memory = Replay_Buffer(self.hyperparameters["buffer_size"], self.hyperparameters["batch_size"], config.seed, self.device)
         self.q_network_local = self.create_NN(input_dim=self.state_size, output_dim=self.action_size)
-        self.q_network_optimizer = optim.Adam(self.q_network_local.parameters(),
-                                              lr=self.hyperparameters["learning_rate"], eps=1e-4)
+        self.q_network_optimizer = optim.Adam(self.q_network_local.parameters(), lr=self.hyperparameters["learning_rate"], eps=1e-4)
         self.exploration_strategy = Epsilon_Greedy_Exploration(config)
+        if self.config.load_model:
+            self.locally_load_policy()
 
     def reset_game(self):
         """重置游戏信息，开始新的episode"""
@@ -113,7 +115,14 @@ class DQN(Base_Agent):
         model_save_path = self.cur_run_data_dir + "/models"
         if not os.path.exists(model_save_path):
             os.makedirs(model_save_path)
-        torch.save(self.q_network_local.state_dict(), model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
+        
+        state = {'model': self.q_network_local.state_dict(),
+                 'optimizer': self.q_network_optimizer.state_dict(),
+                 'exploration_strategy': self.exploration_strategy}
+        torch.save(state, model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
+        print("The model was saved successfully")
+        self.terminal_logger.info("The model was saved successfully")
+        # torch.save(self.q_network_local.state_dict(), model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
 
     def time_for_q_network_to_learn(self):
         """返回布尔值，指示是否已采取足够的步骤来学习，并且重放缓冲区中是否有足够的经验可供学习"""
@@ -128,3 +137,37 @@ class DQN(Base_Agent):
         experiences = self.memory.sample()
         states, actions, rewards, next_states, dones = experiences
         return states, actions, rewards, next_states, dones
+    
+    def locally_load_policy(self):
+        """加载已有模型"""
+        model = torch.load(self.config.model_load_path)
+        self.q_network_local.load_state_dict(model['model'])
+        self.q_network_optimizer.load_state_dict(model['optimizer'])
+        self.exploration_strategy = model['exploration_strategy']
+        print("The model was loaded successfully")
+        self.terminal_logger.info("The model was loaded successfully")
+        # self.q_network_local.load_state_dict(torch.load(self.config.model_load_path))
+
+    def eval_agent(self):
+        """评估智能体"""
+        rounds = 10
+        steps = 10
+        for round in range(rounds):
+            def do():
+                self.config.environment.render()  # 可视化
+                self.action = self.pick_action()  # 选择动作
+                self.conduct_action(self.action)  # 执行一步动作
+                self.state = self.next_state
+                time.sleep(0.01)
+            print("round " + str(round))
+            super().reset_game()
+            # self.config.environment.render()  # 可视化
+            do_step = 0
+            while not self.done:
+                do()
+                do_step += 1
+                print("do_step: " + str(do_step))
+            for step in range(steps):
+                do()
+            
+        self.environment.env.close()

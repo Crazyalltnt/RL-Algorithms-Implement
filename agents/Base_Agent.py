@@ -378,3 +378,12 @@ class Base_Agent(object):
         """从一个模型拷贝参数到另一个模型"""
         for to_model, from_model in zip(to_model.parameters(), from_model.parameters()):
             to_model.data.copy_(from_model.data.clone())
+    
+    def locally_save_policy(self):
+        raise ValueError("Save models needs to be implemented by the agent")
+    
+    def locally_load_policy(self):
+        raise ValueError("Load models needs to be implemented by the agent")
+    
+    def eval_agent(self):
+        raise ValueError("Evaluate models needs to be implemented by the agent")
