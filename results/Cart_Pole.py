@@ -10,26 +10,26 @@ from agents.Trainer import Trainer
 from agents.Evaluator import Evaluator
 
 from agents.DQN_agents.DQN import DQN
+from agents.DQN_agents.DQN_With_Fixed_Q_Targets import DQN_With_Fixed_Q_Targets
+from agents.DQN_agents.DDQN import DDQN
 # from agents.actor_critic_agents.A2C import A2C
 # from agents.DQN_agents.Dueling_DDQN import Dueling_DDQN
 # from agents.actor_critic_agents.SAC_Discrete import SAC_Discrete
 # from agents.actor_critic_agents.A3C import A3C
 # from agents.policy_gradient_agents.PPO import PPO
-# from agents.DQN_agents.DDQN import DDQN
 # from agents.DQN_agents.DDQN_With_Prioritised_Experience_Replay import DDQN_With_Prioritised_Experience_Replay
-# from agents.DQN_agents.DQN_With_Fixed_Q_Targets import DQN_With_Fixed_Q_Targets
 
 config = Config()
 config.seed = 1
 config.environment = gym.make("CartPole-v0")
-# config.num_episodes_to_run = 450
-config.num_episodes_to_run = 1000
+config.num_episodes_to_run = 450
+# config.num_episodes_to_run = 1000
 
 config.show_solution_score = False
 config.visualise_individual_results = True
 config.visualise_overall_agent_results = True
 config.standard_deviation_results = 1.0
-config.runs_per_agent = 1
+config.runs_per_agent = 10
 config.use_GPU = False
 config.overwrite_existing_results_file = False
 config.randomise_random_seed = True
@@ -140,18 +140,19 @@ config.hyperparameters = {
 if __name__ == "__main__":
     # AGENTS = [SAC_Discrete, DDQN, Dueling_DDQN, DQN, DQN_With_Fixed_Q_Targets,
     #           DDQN_With_Prioritised_Experience_Replay, A2C, PPO, A3C ]
-    AGENTS = [DQN]
-
+    AGENTS = [DDQN]
+    num = 1  # 执行次数
     config.eval_render = True  # 评估模式
-    if config.eval_render:
-        config.load_model = True
-        config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210821-225047"
-        config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210821-225047\models\DQN_1_local_network.pt"
-        evaluator = Evaluator(config, AGENTS)
-        evaluator.evaluate_agents()
-    else:
-        config.cur_run_data_dir = create_cur_run_data_dir()
-        config.file_to_save_data_results = config.cur_run_data_dir + "/Cart_Pole_Results_Data.pkl"
-        config.file_to_save_results_graph = config.cur_run_data_dir + "/Cart_Pole_Results_Graph.png"
-        trainer = Trainer(config, AGENTS)
-        trainer.run_games_for_agents()
+    for i in range(num):
+        if config.eval_render:
+            config.load_model = True
+            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210823-170942"
+            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210823-170942\models\DDQN_8_local_network.pt"
+            evaluator = Evaluator(config, AGENTS)
+            evaluator.evaluate_agents()
+        else:
+            config.cur_run_data_dir = create_cur_run_data_dir()
+            config.file_to_save_data_results = config.cur_run_data_dir + "/Cart_Pole_Results_Data.pkl"
+            config.file_to_save_results_graph = config.cur_run_data_dir + "/Cart_Pole_Results_Graph.png"
+            trainer = Trainer(config, AGENTS)
+            trainer.run_games_for_agents()

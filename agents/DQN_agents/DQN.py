@@ -1,4 +1,3 @@
-import random
 import os
 import time
 import numpy as np
@@ -122,7 +121,6 @@ class DQN(Base_Agent):
         torch.save(state, model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
         print("The model was saved successfully")
         self.terminal_logger.info("The model was saved successfully")
-        # torch.save(self.q_network_local.state_dict(), model_save_path + "/{}_{}_local_network.pt".format(self.agent_name, self.agent_round))
 
     def time_for_q_network_to_learn(self):
         """返回布尔值，指示是否已采取足够的步骤来学习，并且重放缓冲区中是否有足够的经验可供学习"""
@@ -146,16 +144,27 @@ class DQN(Base_Agent):
         self.exploration_strategy = model['exploration_strategy']
         print("The model was loaded successfully")
         self.terminal_logger.info("The model was loaded successfully")
-        # self.q_network_local.load_state_dict(torch.load(self.config.model_load_path))
 
     def eval_agent(self):
         """评估智能体"""
         rounds = 10
-        steps = 10
+        steps = 300
         for round in range(rounds):
             def do():
                 self.config.environment.render()  # 可视化
-                self.action = self.pick_action()  # 选择动作
+                state = self.state
+                if isinstance(state, np.int64) or isinstance(state, int): state = np.array([state])
+                state = torch.from_numpy(state).float().unsqueeze(0).to(self.device)
+                if len(state.shape) < 2: state = state.unsqueeze(0)
+                self.q_network_local.eval()  # 将网络设为评估模式
+                with torch.no_grad():  # 不跟踪梯度
+                    action_values = self.q_network_local(state)  # 动作价值列表
+                # self.q_network_local.train()   # 将网络设为训练模式
+                self.turn_off_any_epsilon_greedy_exploration()
+                # 选择动作
+                self.action = self.exploration_strategy.perturb_action_for_exploration_purposes({"action_values": action_values,
+                                                                                            "turn_off_exploration": self.turn_off_exploration,
+                                                                                            "episode_number": self.episode_number})
                 self.conduct_action(self.action)  # 执行一步动作
                 self.state = self.next_state
                 time.sleep(0.01)
@@ -169,5 +178,6 @@ class DQN(Base_Agent):
                 print("do_step: " + str(do_step))
             for step in range(steps):
                 do()
+                print("more step: " + str(step))
             
         self.environment.env.close()
