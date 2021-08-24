@@ -12,12 +12,12 @@ from agents.Evaluator import Evaluator
 from agents.DQN_agents.DQN import DQN
 from agents.DQN_agents.DQN_With_Fixed_Q_Targets import DQN_With_Fixed_Q_Targets
 from agents.DQN_agents.DDQN import DDQN
+from agents.DQN_agents.DDQN_With_Prioritised_Experience_Replay import DDQN_With_Prioritised_Experience_Replay
 # from agents.actor_critic_agents.A2C import A2C
 # from agents.DQN_agents.Dueling_DDQN import Dueling_DDQN
 # from agents.actor_critic_agents.SAC_Discrete import SAC_Discrete
 # from agents.actor_critic_agents.A3C import A3C
 # from agents.policy_gradient_agents.PPO import PPO
-# from agents.DQN_agents.DDQN_With_Prioritised_Experience_Replay import DDQN_With_Prioritised_Experience_Replay
 
 config = Config()
 config.seed = 1
@@ -140,14 +140,14 @@ config.hyperparameters = {
 if __name__ == "__main__":
     # AGENTS = [SAC_Discrete, DDQN, Dueling_DDQN, DQN, DQN_With_Fixed_Q_Targets,
     #           DDQN_With_Prioritised_Experience_Replay, A2C, PPO, A3C ]
-    AGENTS = [DDQN]
+    AGENTS = [DDQN_With_Prioritised_Experience_Replay]
     num = 1  # 执行次数
-    config.eval_render = True  # 评估模式
+    # config.eval_render = True  # 评估模式
     for i in range(num):
         if config.eval_render:
             config.load_model = True
-            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210823-170942"
-            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210823-170942\models\DDQN_8_local_network.pt"
+            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210824-112759"
+            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210824-112759\models\DDQN with Prioritised Replay_5_local_network.pt"
             evaluator = Evaluator(config, AGENTS)
             evaluator.evaluate_agents()
         else:
