@@ -61,16 +61,6 @@ class Dueling_DDQN(DDQN):
         q_values = state_value.unsqueeze(1) + (duelling_q_network_output[:, :-1] - avg_advantage.unsqueeze(1))
         return q_values
 
-    # def locally_load_policy(self):
-        """加载已有模型"""
-        print("dueling")
-        model = torch.load(self.config.model_load_path)
-        self.q_network_local.load_state_dict(model['model'])
-        self.q_network_optimizer.load_state_dict(model['optimizer'])
-        self.exploration_strategy = model['exploration_strategy']
-        print("The model was loaded successfully")
-        self.terminal_logger.info("The model was loaded successfully")
-
     def eval_agent(self):
         """评估智能体"""
         def do():
