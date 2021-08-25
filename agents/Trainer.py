@@ -130,6 +130,10 @@ class Trainer(object):
             self.terminal_logger.info(agent.hyperparameters)
             print("RANDOM SEED " , agent_config.seed)
             self.terminal_logger.info("RANDOM SEED " + str(agent_config.seed))
+            if self.config.load_model:
+                print("1")
+                agent.locally_load_policy()
+                print("2")
             game_scores, rolling_scores, time_taken = agent.run_n_episodes()  # 运行n个episode为一轮
             print("Time taken: {}".format(time_taken), flush=True)
             self.terminal_logger.info("Time taken: {}".format(time_taken))

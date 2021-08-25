@@ -68,4 +68,5 @@ class Evaluator(object):
         
         print("AGENT NAME: {}".format(agent_name))  # 智能体类名
         print("\033[1m" + "{}: {}".format(agent_number, agent_name) + "\033[0m", flush=True)
+        agent.locally_load_policy()
         agent.eval_agent()

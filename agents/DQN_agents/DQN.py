@@ -22,8 +22,6 @@ class DQN(Base_Agent):
         self.q_network_local = self.create_NN(input_dim=self.state_size, output_dim=self.action_size)
         self.q_network_optimizer = optim.Adam(self.q_network_local.parameters(), lr=self.hyperparameters["learning_rate"], eps=1e-4)
         self.exploration_strategy = Epsilon_Greedy_Exploration(config)
-        if self.config.load_model:
-            self.locally_load_policy()
 
     def reset_game(self):
         """重置游戏信息，开始新的episode"""
