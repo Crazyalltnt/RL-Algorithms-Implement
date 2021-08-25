@@ -1,29 +1,36 @@
+import os
+import sys
+from os.path import dirname, abspath
+sys.path.append(dirname(dirname(abspath(__file__))))
+
 import gym
-
-from agents.policy_gradient_agents.PPO import PPO
-from agents.actor_critic_agents.DDPG import DDPG
-from agents.actor_critic_agents.SAC import SAC
-from agents.actor_critic_agents.TD3 import TD3
-from agents.Trainer import Trainer
 from utilities.data_structures.Config import Config
+from utilities.Utility_Functions import create_cur_run_data_dir
+from agents.Trainer import Trainer
+from agents.Evaluator import Evaluator
 
+from agents.actor_critic_agents.DDPG import DDPG
+# from agents.policy_gradient_agents.PPO import PPO
+# from agents.actor_critic_agents.SAC import SAC
+# from agents.actor_critic_agents.TD3 import TD3
 
 config = Config()
 config.seed = 1
 config.environment = gym.make("MountainCarContinuous-v0")
 config.num_episodes_to_run = 450
-config.file_to_save_data_results = None
-config.file_to_save_results_graph = None
+# config.num_episodes_to_run = 1000
+
 config.show_solution_score = False
-config.visualise_individual_results = False
+config.visualise_individual_results = True
 config.visualise_overall_agent_results = True
 config.standard_deviation_results = 1.0
-config.runs_per_agent = 3
+config.runs_per_agent = 10
 config.use_GPU = False
 config.overwrite_existing_results_file = False
 config.randomise_random_seed = True
-config.save_model = False
 
+config.save_model = True
+config.load_model = False
 
 config.hyperparameters = {
     "Policy_Gradient_Agents": {
@@ -87,11 +94,23 @@ config.hyperparameters = {
 }
 
 if __name__ == "__main__":
-    AGENTS = [TD3, DDPG, PPO]
-    trainer = Trainer(config, AGENTS)
-    trainer.run_games_for_agents()
-
-# SAC, ,
+    # AGENTS = [TD3, DDPG, PPO, SAC]
+    AGENTS = [DDPG]
+    num = 1  # 执行次数
+    config.eval_render = True  # 评估模式
+    for i in range(num):
+        if config.eval_render:
+            config.load_model = True
+            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210825-192621"
+            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210825-192621\models\DDPG_5_model.pt"
+            evaluator = Evaluator(config, AGENTS)
+            evaluator.evaluate_agents()
+        else:
+            config.cur_run_data_dir = create_cur_run_data_dir()
+            config.file_to_save_data_results = config.cur_run_data_dir + "/Mountain_Car_Results_Data.pkl"
+            config.file_to_save_results_graph = config.cur_run_data_dir + "/Mountain_Car_Results_Graph.png"
+            trainer = Trainer(config, AGENTS)
+            trainer.run_games_for_agents()
 
 
 

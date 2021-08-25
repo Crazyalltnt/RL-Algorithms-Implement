@@ -112,7 +112,7 @@ class Base_Agent(object):
 
     def get_trials(self):
         """计算平均分数的实验次数"""
-        if self.environment_title in ["AntMaze", "FetchReach", "Hopper", "Walker2d", "CartPole"]: return 100
+        if self.environment_title in ["AntMaze", "FetchReach", "Hopper", "Walker2d", "CartPole", "MountainCarContinuous"]: return 100
         try: return self.environment.unwrapped.trials
         except AttributeError: return self.environment.spec.trials
 

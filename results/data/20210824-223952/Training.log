@@ -1,10 +1,10 @@
-2021-08-25 13:52:33,022 - agents.Base_Agent - INFO - 0 -- CartPole
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 1 -- DISCRETE
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 2 -- 2
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 3 -- None
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 4 -- 4
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 5 -- {'learning_rate': 0.01, 'batch_size': 256, 'buffer_size': 40000, 'epsilon': 1.0, 'epsilon_decay_rate_denominator': 1, 'discount_rate': 0.99, 'tau': 0.01, 'alpha_prioritised_replay': 0.6, 'beta_prioritised_replay': 0.1, 'incremental_td_error': 1e-08, 'update_every_n_steps': 1, 'linear_hidden_units': [30, 15], 'final_layer_activation': 'None', 'batch_norm': False, 'gradient_clipping_norm': 0.7, 'learning_iterations': 1, 'clip_rewards': False}
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 6 -- 195.0
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 7 -- 100
-2021-08-25 13:52:33,023 - agents.Base_Agent - INFO - 8 -- cpu
-2021-08-25 13:52:33,079 - agents.Base_Agent - INFO - Reseting game -- New start state [ 0.03073904  0.00145001 -0.03088818 -0.03131252]
+2021-08-25 18:51:03,067 - agents.Base_Agent - INFO - 0 -- CartPole
+2021-08-25 18:51:03,067 - agents.Base_Agent - INFO - 1 -- DISCRETE
+2021-08-25 18:51:03,067 - agents.Base_Agent - INFO - 2 -- 2
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 3 -- None
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 4 -- 4
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 5 -- {'learning_rate': 0.01, 'batch_size': 256, 'buffer_size': 40000, 'epsilon': 1.0, 'epsilon_decay_rate_denominator': 1, 'discount_rate': 0.99, 'tau': 0.01, 'alpha_prioritised_replay': 0.6, 'beta_prioritised_replay': 0.1, 'incremental_td_error': 1e-08, 'update_every_n_steps': 1, 'linear_hidden_units': [30, 15], 'final_layer_activation': 'None', 'batch_norm': False, 'gradient_clipping_norm': 0.7, 'learning_iterations': 1, 'clip_rewards': False}
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 6 -- 195.0
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 7 -- 100
+2021-08-25 18:51:03,068 - agents.Base_Agent - INFO - 8 -- cpu
+2021-08-25 18:51:03,090 - agents.Base_Agent - INFO - Reseting game -- New start state [ 0.03073904  0.00145001 -0.03088818 -0.03131252]
