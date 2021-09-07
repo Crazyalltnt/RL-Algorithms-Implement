@@ -85,7 +85,7 @@ class DDPG(Base_Agent):
 
     def compute_critic_values_for_next_states(self, next_states):
         """计算下一个状态的 critic value"""
-        # Q'(s',a',θ^(μ‘))
+        # Q'(s',a',θ^(Q‘))
         with torch.no_grad():
             actions_next = self.actor_target(next_states)
             critic_targets_next = self.critic_target(torch.cat((next_states, actions_next), 1))
@@ -93,13 +93,13 @@ class DDPG(Base_Agent):
 
     def compute_critic_values_for_current_states(self, rewards, critic_targets_next, dones):
         """计算当前状态的 critic value"""
-        # r + γQ'(s',a',θ^(μ‘))
+        # r + γQ'(s',a',θ^(Q‘))
         critic_targets_current = rewards + (self.hyperparameters["discount_rate"] * critic_targets_next * (1.0 - dones))
         return critic_targets_current
 
     def compute_expected_critic_values(self, states, actions):
         """计算 critic 期望值"""
-        # Q'(s,a,θ^(μ))
+        # Q'(s,a,θ^(Q))
         critic_expected = self.critic_local(torch.cat((states, actions), 1))
         return critic_expected
 
