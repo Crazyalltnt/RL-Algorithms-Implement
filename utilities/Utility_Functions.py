@@ -21,8 +21,8 @@ def normalise_rewards(rewards):
     return (rewards - mean_reward) / (std_reward + 1e-8) #1e-8 added for stability
 
 def create_actor_distribution(action_types, actor_output, action_size):
-    """Creates a distribution that the actor can then use to randomly draw actions"""
-    if action_types == "DISCRETE":
+    """创建一个分布，然后actor可以使用它来随机采样动作"""
+    if action_types == "DISCRETE":  # 离散动作
         assert actor_output.size()[1] == action_size, "Actor output the wrong size"
         action_distribution = Categorical(actor_output)  # this creates a distribution to sample from
     else:
@@ -37,8 +37,8 @@ def create_actor_distribution(action_types, actor_output, action_size):
     return action_distribution
 
 class SharedAdam(torch.optim.Adam):
-    """Creates an adam optimizer object that is shareable between processes. Useful for algorithms like A3C. Code
-    taken from https://github.com/ikostrikov/pytorch-a3c/blob/master/my_optim.py"""
+    """创建一个可在进程之间共享的 adam 优化器对象。 对 A3C 等算法很有用. 
+    Code taken from https://github.com/ikostrikov/pytorch-a3c/blob/master/my_optim.py"""
     def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8, weight_decay=0, amsgrad=False):
         super(SharedAdam, self).__init__(params, lr=lr, betas=betas, eps=eps, weight_decay=weight_decay, amsgrad=amsgrad)
         for group in self.param_groups:
