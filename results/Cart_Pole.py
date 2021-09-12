@@ -15,7 +15,7 @@ from agents.DQN_agents.DDQN import DDQN
 from agents.DQN_agents.DDQN_With_Prioritised_Experience_Replay import DDQN_With_Prioritised_Experience_Replay
 from agents.DQN_agents.Dueling_DDQN import Dueling_DDQN
 from agents.actor_critic_agents.A3C import A3C
-# from agents.actor_critic_agents.A2C import A2C
+from agents.actor_critic_agents.A2C import A2C
 # from agents.actor_critic_agents.SAC_Discrete import SAC_Discrete
 # from agents.policy_gradient_agents.PPO import PPO
 
@@ -140,7 +140,7 @@ config.hyperparameters = {
 if __name__ == "__main__":
     # AGENTS = [SAC_Discrete, DDQN, Dueling_DDQN, DQN, DQN_With_Fixed_Q_Targets,
     #           DDQN_With_Prioritised_Experience_Replay, A2C, PPO, A3C ]
-    AGENTS = [A3C]
+    AGENTS = [A2C]
     num = 1  # 执行次数
     # config.eval_render = True  # 评估模式
     for i in range(num):
