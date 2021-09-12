@@ -11,7 +11,7 @@ from agents.Evaluator import Evaluator
 
 from agents.actor_critic_agents.DDPG import DDPG
 from agents.actor_critic_agents.TD3 import TD3
-# from agents.policy_gradient_agents.PPO import PPO
+from agents.policy_gradient_agents.PPO import PPO
 # from agents.actor_critic_agents.SAC import SAC
 
 config = Config()
@@ -29,7 +29,7 @@ config.use_GPU = False
 config.overwrite_existing_results_file = False
 config.randomise_random_seed = True
 
-config.save_model = True
+config.save_model = False
 config.load_model = False
 
 config.hyperparameters = {
@@ -95,14 +95,14 @@ config.hyperparameters = {
 
 if __name__ == "__main__":
     # AGENTS = [TD3, DDPG, PPO, SAC]
-    AGENTS = [TD3]
+    AGENTS = [PPO]
     num = 1  # 执行次数
-    config.eval_render = True  # 评估模式
+    # config.eval_render = True  # 评估模式
     for i in range(num):
         if config.eval_render:
             config.load_model = True
-            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210907-111513"
-            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210907-111513\models\TD3_4_model.pt"
+            config.cur_run_data_dir = r"E:\RL\RLAlogorithmsImplement\results\data\20210825-192621"
+            config.model_load_path = r"E:\RL\RLAlogorithmsImplement\results\data\20210825-192621\models\DDPG_3_model.pt"
             evaluator = Evaluator(config, AGENTS)
             evaluator.evaluate_agents()
         else:
