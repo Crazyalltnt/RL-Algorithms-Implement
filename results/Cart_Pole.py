@@ -26,7 +26,7 @@ config.num_episodes_to_run = 450
 # config.num_episodes_to_run = 1000
 
 config.show_solution_score = False
-config.visualise_individual_results = True
+config.visualise_individual_results = False
 config.visualise_overall_agent_results = True
 config.standard_deviation_results = 1.0
 config.runs_per_agent = 10

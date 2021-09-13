@@ -12,7 +12,7 @@ from agents.Evaluator import Evaluator
 from agents.actor_critic_agents.DDPG import DDPG
 from agents.actor_critic_agents.TD3 import TD3
 from agents.policy_gradient_agents.PPO import PPO
-# from agents.actor_critic_agents.SAC import SAC
+from agents.actor_critic_agents.SAC import SAC
 
 config = Config()
 config.seed = 1
@@ -21,7 +21,7 @@ config.num_episodes_to_run = 450
 # config.num_episodes_to_run = 1000
 
 config.show_solution_score = False
-config.visualise_individual_results = True
+config.visualise_individual_results = False
 config.visualise_overall_agent_results = True
 config.standard_deviation_results = 1.0
 config.runs_per_agent = 10
@@ -95,7 +95,7 @@ config.hyperparameters = {
 
 if __name__ == "__main__":
     # AGENTS = [TD3, DDPG, PPO, SAC]
-    AGENTS = [PPO]
+    AGENTS = [SAC]
     num = 1  # 执行次数
     # config.eval_render = True  # 评估模式
     for i in range(num):
