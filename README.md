@@ -3,7 +3,7 @@
 两种实现方法
 
 ## Unified - 统一框架实现
-，参考自 [Deep-Reinforcement-Learning-Algorithms-with-PyTorch](https://github.com/p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch)，加入评估器。
+参考自 [Deep-Reinforcement-Learning-Algorithms-with-PyTorch](https://github.com/p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch)，加入评估器。
 
 **实现的算法**
 - Deep Q Learning (DQN) (Mnih et al. 2013)
