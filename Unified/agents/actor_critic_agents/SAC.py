@@ -43,7 +43,7 @@ class SAC(Base_Agent):
         self.actor_optimizer = torch.optim.Adam(self.actor_local.parameters(),
                                           lr=self.hyperparameters["Actor"]["learning_rate"], eps=1e-4)
         self.automatic_entropy_tuning = self.hyperparameters["automatically_tune_entropy_hyperparameter"]
-        if self.automatic_entropy_tuning:
+        if self.automatic_entropy_tuning:  # 自动熵调优
             self.target_entropy = -torch.prod(torch.Tensor(self.environment.action_space.shape).to(self.device)).item() # heuristic value from the paper
             self.log_alpha = torch.zeros(1, requires_grad=True, device=self.device)
             self.alpha = self.log_alpha.exp()
@@ -130,7 +130,7 @@ class SAC(Base_Agent):
         mean, log_std = actor_output[:, :self.action_size], actor_output[:, self.action_size:]
         std = log_std.exp()
         normal = Normal(mean, std)
-        x_t = normal.rsample()  #rsample means it is sampled using reparameterisation trick
+        x_t = normal.rsample()  #rsample 表示使用重新参数化技巧对其进行采样
         action = torch.tanh(x_t)
         log_prob = normal.log_prob(x_t)
         log_prob -= torch.log(1 - action.pow(2) + EPSILON)
