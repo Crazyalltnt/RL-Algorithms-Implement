@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-Unified/results/data/20210913-221443/Training.log
+*.log
