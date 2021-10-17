@@ -33,8 +33,7 @@ class MLP(nn.Module):
 
 class Critic(nn.Module):
     def __init__(self, n_obs, output_dim, hidden_size, init_w=3e-3):
-        super(Critic, self).__init__()
-        
+        super().__init__()
         self.linear1 = nn.Linear(n_obs + output_dim, hidden_size)
         self.linear2 = nn.Linear(hidden_size, hidden_size)
         self.linear3 = nn.Linear(hidden_size, 1)
@@ -52,7 +51,7 @@ class Critic(nn.Module):
 
 class Actor(nn.Module):
     def __init__(self, n_obs, output_dim, hidden_size, init_w=3e-3):
-        super(Actor, self).__init__()  
+        super().__init__()  
         self.linear1 = nn.Linear(n_obs, hidden_size)
         self.linear2 = nn.Linear(hidden_size, hidden_size)
         self.linear3 = nn.Linear(hidden_size, output_dim)
@@ -68,7 +67,8 @@ class Actor(nn.Module):
 
 class ActorCritic(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_dim=256):
-        super(ActorCritic, self).__init__()
+        super().__init__()
+
         self.critic = nn.Sequential(
             nn.Linear(input_dim, hidden_dim),
             nn.ReLU(),
