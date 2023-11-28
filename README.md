@@ -20,4 +20,10 @@
 - Proximal Policy Optimisation (PPO) (Schulman et al. 2017)
 
 ## Independent - 独立算法实现
-TODO
+- Deep Q Learning (DQN) (Mnih et al. 2013)
+- DQN with Fixed Q Targets (Mnih et al. 2013)
+- Double DQN (DDQN) (Hado van Hasselt et al. 2015)
+- Deep Deterministic Policy Gradients (DDPG) (Lillicrap et al. 2016 )
+- Twin Delayed Deep Deterministic Policy Gradients (TD3) (Fujimoto et al. 2018)
+- Syncrhonous Advantage Actor Critic (A2C)
+- Proximal Policy Optimisation (PPO) (Schulman et al. 2017)
